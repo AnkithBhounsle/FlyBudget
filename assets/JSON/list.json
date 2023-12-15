@@ -1,0 +1,54 @@
+{
+    "list":[
+        {
+            "id":"1",
+            "title":"about webjet ",
+            "isExpanded": false,
+            "description":"Webjet is the #1 online travel agency in Australia and New Zealand. Webjet’s history and dedication to delivering the best flights, tours and accommodation covers more than 20 years. With a range of industry-leading and innovative tools and technology, Webjet is able to offer travellers all the resources needed to make booking your next flight, overseas holiday, mini-break or hotel stay as easy as possible – and all at the most affordable prices."
+        },
+        {
+            "id":"2",
+            "title":"book flights with webjet ",
+            "isExpanded": false,
+            "description":"Ready for your next holiday? Webjet has you covered. Webjet connects travellers with flight deals to top international destinations in New Zealand, Europe, Asia, North America and South America, as well as the Middle East and Africa. Plus, Webjet provide an unparalleled amount of choice for cheap airfares to all of Australia’s domestic holiday hotspots, from beachside resort towns in Queensland to capital cities and the Red Centre. Webjet’s unique Deal Finder allows you to compare cheap flights across a range of airlines, travel dates and seating classes so you can find and book the best deal – meaning you may just have more money left over for, say, high tea in London, a hotel room upgrade in New York, or a few extra days in Bali. The possibilities are truly endless with Webjet."
+      
+             
+        },
+        {
+            "id":"3",
+            "title":"demostic flights with aus 3",
+            "isExpanded": false,
+            "description":"With flight tickets to all of Australias most popular holiday hotspots, booking airfares with Webjet is your ticket to exploring more of the great land Down Under. Want to travel to Sydney and climb the Harbour Bridge? Or maybe you could do with a little R&R on a beach on the Gold Coast? Perhaps it’s time you finally paid the country’s capital of Canberra a visit? Wherever you’re itching to go, Webjet will get you there for less."
+        },
+        {
+            "id":"4",
+            "title":"New Zealand / South Pacific Islands",
+            "isExpanded": false,
+            "description":" Visiting Australia's neighbour across the Tasman is much more affordable than you might think. Webjet has hundreds of the best flights and daily airfares to New Zealand from airlines including Air New Zealand, Qantas and Virgin Australia to ensure you find the best of flights to New Zealand. Travel to the capital city of Wellington to explore the Hawkes Bay wine region or find cheap airfares to Auckland in order to visit the City of Sails or the hot springs in Rotorua. If you're more in the mood for dramatic scenery, consider plane tickets to Queenstown on the South Island to hike in Mt Aspiring National Park, or find flights to Christchurch and immerse yourself in the aptly named Garden City. Other New Zealand destinations to turn your holiday attentions to include Dunedin and Hamilton.Want to head a little further abroad on your next holiday? Webjet helps you to compare cheap flights to Noumea, Niue, Vanuatu and other Pacific Island gems. Travel to Fiji for pristine beaches and azure water with flights to Nadi, explore the cultural heritage of Samoa's capital of Apia or escape to the Cook Islands and find your own slice of paradise in Rarotonga. Some of the carriers offering flights from Australia to various South Pacific islands include Air Tahiti Nui, Air Pacific Airways, Air Vanuatu, Air Calin, Fiji Airways and Solomon Airlines.Flight deals across all these airlines can be found and booked using Webjet. Plus, once you've found your perfect flight tickets to New Zealand or the South Pacific, you can easily add on hotel accommodation or car hire to your booking – making your next holiday that much easier to plan.."
+       
+        },
+        {
+        "id":"5",
+        "title":"flights to Asia",
+        "isExpanded": false,
+        "description":"There is no shortage of adventure waiting for you with a holiday in Asia. No matter if you're travelling with a partner, family or friends, there is a place in Asia for every kind of traveller and using Webjet's flight finder will make sure you get there without breaking the bank." },
+
+        {
+        "id":"6",
+        "title":"flights to Europe",
+        "isExpanded": false,
+        "description":"There is so much to see, do and experience in Europe that it would be quite the task to fit everything into the one trip. Europe is a holiday destination that almost demands more than one visit. So, no matter if you're headed to Europe for the first time, or are making your second, third or tenth European pilgrimage; book a flight to Europe with Webjet to get started." 
+     },
+     {
+        "id":"7",
+        "title":"flights to North America",
+        "isExpanded": false,
+        "description":"No matter if you want to enjoy cocktails in the Big Apple, explore the Rocky Mountains in Canada or learn to surf in Honolulu, Webjet has the best prices on flights to North America. Choose to book a flight to the USA or Canada for an epic family holiday, ticking off all of America's biggest attractions (Disneyland or Disney World included!), embarking on an incredible road trip along the iconic Route 66, or use your air ticket to venture off the traditional tourist path to discover hidden towns and unique sights. A holiday to the Great White North is just as exciting, with bountiful national parks and natural landscapes plus vibrant cities and frontier villages to explore." },
+        {
+        "id":"8",
+        "title":" frequently asked questions (FAQ's)",
+        "isExpanded": false,
+        "description":"Why should I book with Webjet?  Offering more than 20 years of experience in the travel industry and an unparalleled level of choice, Webjet makes planning travel, whether it’s for business or pleasure, easier than ever. You’ll quickly discover what helps to make Webjet Australia and New Zealand’s #1 online travel agency, from having the option to mix and match airfares and compare prices between airlines, to being able to combine your flight booking with hotel rooms, car hire and more."  }
+       
+    ]
+}
