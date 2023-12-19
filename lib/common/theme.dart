@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'colors.dart';
 
-TextTheme pmpTextTheme() {
+TextTheme fbTextTheme() {
   return TextTheme(
     displayLarge: GoogleFonts.inter(
       fontSize: 64.sp,
