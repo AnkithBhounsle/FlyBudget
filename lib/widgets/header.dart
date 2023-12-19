@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'package:fly_jet/screen/view_screen.dart';
 import 'package:fly_jet/widgets/airlinecredit.dart';
 import 'package:fly_jet/widgets/giftcard.dart';
@@ -20,58 +22,55 @@ class _HeaderState extends State<Header> {
     return Column(
       children: [
         Container(
-          width: double.infinity,
-          height: 100,
+          width: 1280.w,
+          height: 100.h,
           color: const Color.fromARGB(121, 18, 199, 18),
           child: Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 20),
+                padding:  EdgeInsets.only(left: 20.sp),
                 child: Image.asset(
-                  'assets/logo.png', // Replace with the path to your logo image
-                  height: 200, // Adjust the height as needed
+                  'assets/logo.png', 
+                  height: 200.h, 
                 ),
               ),
-              const SizedBox(width: 10),
-              const SizedBox(
-                width: 800,
+               SizedBox(width: 10.w),
+               SizedBox(
+                width: 800.w,
               ),
-              const Text(
+               Text(
                 'My Account',
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: 12.sp,
                   color: Color.fromARGB(255, 0, 0, 0),
                 ),
               ),
               PopupMenuButton<String>(
                 icon: const Icon(Icons.arrow_drop_down, color: Colors.white),
                 itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
-                  const PopupMenuItem<String>(
+                   PopupMenuItem<String>(
                     value: 'login',
-                    child: Text('Login', style: TextStyle(fontSize: 12, color: Colors.black)),
+                    child: Text('Login', style: TextStyle(fontSize: 12.sp, color: Colors.black)),
                   ),
-                  const PopupMenuItem<String>(
+                   PopupMenuItem<String>(
                     value: 'signup',
-                    child: Text('Signup', style: TextStyle(fontSize: 12, color: Colors.black)),
+                    child: Text('Signup', style: TextStyle(fontSize: 12.sp, color: Colors.black)),
                   ),
                 ],
                 onSelected: (String choice) {
                   if (choice == 'login') {
-                    // Navigate to the login page
                     Navigator.push(context, MaterialPageRoute(builder: (context) => const MyLogin()));
                   } else if (choice == 'signup') {
                       Navigator.push(context, MaterialPageRoute(builder: (context) => const Register1Page()));
-                    // Handle signup action
-                    
                   }
                 },
               ),
               
-              const SizedBox(width: 15),
-              const Text(
+               SizedBox(width: 15.w),
+               Text(
                 'Manage Bookings',
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: 12.sp,
                   color: Color.fromARGB(255, 255, 255, 255),
                 ),
               ),
@@ -102,11 +101,11 @@ class _HeaderState extends State<Header> {
                   }
                 },
               ),
-              const SizedBox(width: 15),
+               SizedBox(width: 15.w),
     
-              const SizedBox(width: 15),
+               SizedBox(width: 15.w),
               const Text('Customer Support', style: TextStyle(fontSize: 12, color: Colors.white)),
-              const SizedBox(width: 5),
+               SizedBox(width: 5.w),
               
     
               PopupMenuButton<String>(
@@ -152,11 +151,11 @@ class _HeaderState extends State<Header> {
                 },
               ),
               
-              const SizedBox(width: 15),
+               SizedBox(width: 15.w),
               const Text('My Cart', style: TextStyle(fontSize: 12, color: Colors.white)),
-              const SizedBox(width: 5),
+               SizedBox(width: 5.w),
               const Icon(Icons.shopping_cart, color: Colors.white, size: 15),
-              const SizedBox(width: 15),
+               SizedBox(width: 15.w),
             ],
           ),
         ),
