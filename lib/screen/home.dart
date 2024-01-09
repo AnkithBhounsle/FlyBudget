@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 
 import 'package:fly_jet/common/device.dart';
 import 'package:fly_jet/common/theme.dart';
+import 'package:fly_jet/screen/view_screen.dart';
 import 'package:fly_jet/widgets/footer.dart';
 import 'package:fly_jet/widgets/header.dart';
+import 'package:fly_jet/widgets/internationaldeals.dart';
 import 'package:fly_jet/widgets/list.dart';
 import 'package:fly_jet/widgets/main_menu.dart';
+import 'package:fly_jet/widgets/register1.dart';
 import 'package:fly_jet/widgets/searchplan.dart';
 
 class HomePage extends StatefulWidget {
@@ -35,10 +38,16 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Header(),
-            MainMenuBar(),
+
+           
+           Header(),
+         MainMenuBar(),
+          
             SearchPlan(),
-            ListPage(),
+          //  ListPage(),
+          
+
+
             Footer(),
           ],
         ),

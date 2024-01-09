@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:fly_jet/screen/international_screen.dart';
+import 'package:fly_jet/widgets/giftcard.dart';
+import 'package:fly_jet/widgets/internationaldeals.dart';
+import 'package:fly_jet/widgets/register1.dart';
 
 class MainMenuBar extends StatefulWidget {
   const MainMenuBar({super.key});
@@ -167,7 +171,10 @@ class _MainMenuBarState extends State<MainMenuBar> {
                       color: Colors.white),
                 )),
             TextButton(
-                onPressed: () {},
+                onPressed: () {
+                   Navigator.push(context, MaterialPageRoute(builder: (context) => InternationalScreen ()));
+             
+                },
                 child: const Text(
                   'International Deals ',
                   style: TextStyle(
@@ -176,15 +183,21 @@ class _MainMenuBarState extends State<MainMenuBar> {
                       color: Colors.white),
                 )),
             TextButton(
-                onPressed: () {},
+                onPressed: () {
+                   Navigator.push(context, MaterialPageRoute(builder: (context) => GiftCard()));
+             
+                },
                 child: const Text(
                   'Gift Cards',
+
                   style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
-                )),
-          ],
+                ),
+                ),
+         
+           ],
         ),
       ),
     );

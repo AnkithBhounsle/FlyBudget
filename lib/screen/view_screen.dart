@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:fly_jet/view2imgs.dart';
 import 'package:fly_jet/widgets/header.dart';
+import 'package:fly_jet/widgets/listview.dart';
 import 'package:fly_jet/widgets/view.dart';
+import 'package:fly_jet/widgets/viewdescription.dart';
 
 
 
@@ -28,10 +31,9 @@ class _ViewScreenState extends State<ViewScreen> {
               SizedBox(height: 25,),
              
                  ViewPage(),
-                 
-             
-
-                  
+                 Listview(),
+               ViewDescriptionPage(),
+               View2Img(),            
               ],
             ),
           ),

@@ -188,7 +188,8 @@ class _SearchPlanState extends State<SearchPlan> {
                                     //     .format(pickeddate);
                                   });
                                 }
-                              }),
+                              }
+                              ),
                         ),
                       ),
                     ],
