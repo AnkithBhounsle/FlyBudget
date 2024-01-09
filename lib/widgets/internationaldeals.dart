@@ -14,7 +14,7 @@ class _InternationalDealsState extends State<InternationalDeals> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
         child: Column(
-          // crossAxisAlignment: CrossAxisAlignment.start,
+           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -206,6 +206,7 @@ class _InternationalDealsState extends State<InternationalDeals> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
+                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Stack(
                           children: [
