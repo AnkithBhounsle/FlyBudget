@@ -34,10 +34,7 @@ class _AirLineCreditState extends State<AirLineCredit> {
                     ],
                   ),
                    const SizedBox(height: 20),
-          
-                 
-                
-            
+     
                   Row(
                     children: [
                       Container(

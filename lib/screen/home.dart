@@ -4,6 +4,7 @@ import 'package:fly_jet/common/device.dart';
 import 'package:fly_jet/common/theme.dart';
 import 'package:fly_jet/widgets/footer.dart';
 import 'package:fly_jet/widgets/header.dart';
+import 'package:fly_jet/widgets/home_list_view.dart';
 import 'package:fly_jet/widgets/list.dart';
 import 'package:fly_jet/widgets/main_menu.dart';
 import 'package:fly_jet/widgets/searchplan.dart';
@@ -35,10 +36,11 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Header(),
-            MainMenuBar(),
-            SearchPlan(),
-            ListPage(),
+            // Header(),
+            // MainMenuBar(),
+            // SearchPlan(),
+             //HomeListView(),
+            // ListPage(),
             Footer(),
           ],
         ),

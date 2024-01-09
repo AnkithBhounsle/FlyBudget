@@ -33,35 +33,6 @@ class _ListPageState extends State<ListPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        
-  
-       
-     
-          
-                
-                  
-                    
-                    
-                        
-                          
-                            
-                        
-                           
-                         
-                         
-                          
-                            
-                            
-                             
-                                
-                                
-                               
-                                  
-                            
-                        
-                        
-                      
-        
         Padding(
           padding: const EdgeInsets.only(left: 30.0),
           child: ListView.builder(

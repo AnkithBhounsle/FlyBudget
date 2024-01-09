@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Footer extends StatefulWidget {
   const Footer({super.key});
@@ -11,20 +12,20 @@ class _FooterState extends State<Footer> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 1400,
-      height: 270,
+      width: 1400.w,
+      height: 300.h,
       child: Row(
         children: [
           Container(
-            width: 200,
-            height: 300,
+            width: 200.w,
+            height: 500.h,
             decoration:
                 BoxDecoration(border: Border.all(color: Colors.grey, width: 1)),
             child: Column(
               children: [
                 Container(
-                  width: 200,
-                  height: 35,
+                  width: 200.w,
+                  height: 35.h,
                   decoration: const BoxDecoration(color: Colors.grey),
                   child: const Center(
                     child: Text(
@@ -37,16 +38,16 @@ class _FooterState extends State<Footer> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 8),
-                const Padding(
-                  padding: EdgeInsets.only(left: 10.0),
+                SizedBox(height: 8.h),
+                Padding(
+                  padding: EdgeInsets.only(left: 10.w),
                   child: Row(
                     children: [
                       Icon(
                         Icons.circle,
                         size: 5,
                       ),
-                      SizedBox(width: 8),
+                      SizedBox(width: 8.w),
                       Text(
                         "Flights",
                         style: TextStyle(
@@ -57,8 +58,8 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 10.0),
+                Padding(
+                  padding: EdgeInsets.only(left: 10.w),
                   child: Row(
                     children: [
                       Icon(
@@ -66,7 +67,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Hotel",
@@ -78,8 +79,8 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 10.0),
+                Padding(
+                  padding: EdgeInsets.only(left: 10.w),
                   child: Row(
                     children: [
                       Icon(
@@ -99,8 +100,8 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 10.0),
+                Padding(
+                  padding: EdgeInsets.only(left: 10.w),
                   child: Row(
                     children: [
                       Icon(
@@ -120,8 +121,8 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 10.0),
+                Padding(
+                  padding: EdgeInsets.only(left: 10.w),
                   child: Row(
                     children: [
                       Icon(
@@ -742,29 +743,26 @@ class _FooterState extends State<Footer> {
                         Icons.smart_display,
                         size: 15,
                       ),
-                      SizedBox( width: 8,
+                      SizedBox(
+                        width: 8,
                       ),
-                      Text("Webjet YouTube",style: TextStyle(fontSize: 13,color: Colors.grey,decoration: TextDecoration.none),
+                      Text(
+                        "Webjet YouTube",
+                        style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.grey,
+                            decoration: TextDecoration.none),
                       ),
                     ],
                   ),
-                  
                 ),
-               
               ],
             ),
-            
           ),
-          
-        
         ],
-        
-       //children
+
+        //children
       ),
-      
-      
-      
     );
-    
   }
 }
