@@ -36,11 +36,11 @@ class _GiftCardState extends State<GiftCard> {
             Image.asset('assets/download (1).jpg',height: 200, width: 300, ),
          const Text('One gift card, thousands of adventures.',style: TextStyle(  fontWeight: FontWeight.bold,fontSize: 50),),
                 Padding(
-                 padding: EdgeInsets.only(top:20.0),
+                 padding: const EdgeInsets.only(top:20.0),
                  child: SizedBox(
                   height: 50.sp,
                   width: 1000.w,
-                  child: Text("Whether you're treating a loved one or want to thank a customer, client or employee, the gift of travel makes the perfect present.Webjet Gift Cards can be redeemed on flights, holiday packages and hotel bookings**, and, best of all, offer a 3-year validity for ultimate booking flexibility.",style: TextStyle( color: Colors.black,fontSize: 15),textAlign: TextAlign.center,)),
+                  child: const Text("Whether you're treating a loved one or want to thank a customer, client or employee, the gift of travel makes the perfect present.Webjet Gift Cards can be redeemed on flights, holiday packages and hotel bookings**, and, best of all, offer a 3-year validity for ultimate booking flexibility.",style: TextStyle( color: Colors.black,fontSize: 15),textAlign: TextAlign.center,)),
                ),
            Row(
              children: [
@@ -73,31 +73,31 @@ class _GiftCardState extends State<GiftCard> {
                Row(
             children: [
            Padding(
-                padding:  EdgeInsets.only(top:50.0),
+                padding:  const EdgeInsets.only(top:50.0),
                 child: Column(
                   children: [
                     const Text("Webjet eGift Cards",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold),),
                       Padding(
-                       padding: EdgeInsets.only(top:20.0),
+                       padding: const EdgeInsets.only(top:20.0),
                        child: SizedBox(
                         height: 60.sp,
                         width: 500.w,
-                        child: Text("Need your gift in a hurry? You can order a Webjet eGift Card online and receive it instantly via email in a print-friendly format.",style: TextStyle(fontSize: 16,),)),
+                        child: const Text("Need your gift in a hurry? You can order a Webjet eGift Card online and receive it instantly via email in a print-friendly format.",style: TextStyle(fontSize: 16,),)),
                      ),
                    Padding(
-                    padding: EdgeInsets.only(top:20.0),
+                    padding: const EdgeInsets.only(top:20.0),
                     child: SizedBox(
                       height: 60.sp,
                       width: 500.w,
-                      child: Text("Simply select the 'Purchase an eGift Card' button below, choose your eGift Card value from 20 to 5,000, and enter your recipient's details.",style: TextStyle(fontSize: 16),)),
+                      child: const Text("Simply select the 'Purchase an eGift Card' button below, choose your eGift Card value from 20 to 5,000, and enter your recipient's details.",style: TextStyle(fontSize: 16),)),
                   ),
                    Padding(
-                   padding: EdgeInsets.only(top:20.0),
+                   padding: const EdgeInsets.only(top:20.0),
                     child: SizedBox(
                   height: 100.sp,
                   width: 500.w,
                   
-                      child: Text("To redeem, enter the unique card number into the Gift Card field on the payment page when making a booking. Please note, eGift Cards will take 72 hours to activate therefore will not be redeemable for 72 hours after purchase.",style: TextStyle(fontSize: 16,),)),
+                      child: const Text("To redeem, enter the unique card number into the Gift Card field on the payment page when making a booking. Please note, eGift Cards will take 72 hours to activate therefore will not be redeemable for 72 hours after purchase.",style: TextStyle(fontSize: 16,),)),
                   ),
                   
                     Padding(
@@ -125,30 +125,30 @@ class _GiftCardState extends State<GiftCard> {
                child: Image.asset('assets/2469_thumb2.png',height: 500, width: 500,),
              ),
                  Padding(
-                padding: EdgeInsets.only(top:40.0,left: 200),
+                padding: const EdgeInsets.only(top:40.0,left: 200),
                 child: Column(
                   children: [
-       Text("Physical Gift Card",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold),),
+       const Text("Physical Gift Card",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold),),
                      Padding(
-                       padding: EdgeInsets.only(top:20.0),
+                       padding: const EdgeInsets.only(top:20.0),
                        child: SizedBox(
                         height: 60.sp,
                         width: 500.w,
-                        child: Text("A Webjet Gift Card is perfect for any special occasion. You can purchase a physical Webjet \$100, \$200 or Variable gift card (\$20-\$500) from major retailers such as Coles, Woolworths, Australia Post, BIG W and more." ,style: TextStyle(fontSize: 16,),)),
+                        child: const Text("A Webjet Gift Card is perfect for any special occasion. You can purchase a physical Webjet \$100, \$200 or Variable gift card (\$20-\$500) from major retailers such as Coles, Woolworths, Australia Post, BIG W and more." ,style: TextStyle(fontSize: 16,),)),
                      ),
                   Padding(
-                    padding: EdgeInsets.only(top:20.0),
+                    padding: const EdgeInsets.only(top:20.0),
                     child: SizedBox(
                       height: 60.sp,
                       width: 500.w,
-                      child: Text("Your lucky recipient can use their Webjet Gift Card on a flight, holiday package and hotel booking*. ",style: TextStyle(fontSize: 16),)),
+                      child: const Text("Your lucky recipient can use their Webjet Gift Card on a flight, holiday package and hotel booking*. ",style: TextStyle(fontSize: 16),)),
                   ),
                   Padding(
-                   padding: EdgeInsets.only(top:20.0),
+                   padding: const EdgeInsets.only(top:20.0),
                     child: SizedBox(
                   height: 100.sp,
                   width: 500.w,
-                   child: Text(" To redeem, enter the unique card number into the Gift Card field on the payment page when making a booking.",style: TextStyle(fontSize: 16,),)),
+                   child: const Text(" To redeem, enter the unique card number into the Gift Card field on the payment page when making a booking.",style: TextStyle(fontSize: 16,),)),
                   ),
                    ],
                 ),
@@ -160,23 +160,23 @@ class _GiftCardState extends State<GiftCard> {
                  child: Row(
                          children: [
                            Padding(
-                  padding: EdgeInsets.only(left: 200,bottom: 100),
+                  padding: const EdgeInsets.only(left: 200,bottom: 100),
                   child: Column(
                     children: [
-                      Text("Corporate Gifting",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold),),
+                      const Text("Corporate Gifting",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold),),
                        Padding(
-                         padding: EdgeInsets.only(top:20.0),
+                         padding: const EdgeInsets.only(top:20.0),
                          child: SizedBox(
                           height: 60.sp,
                           width: 500.w,
-                          child: Text(" Treat your customers or reward your employees with the gift of travel.",style: TextStyle(fontSize: 16,),)),
+                          child: const Text(" Treat your customers or reward your employees with the gift of travel.",style: TextStyle(fontSize: 16,),)),
                        ),
                     Padding(
-                      padding: EdgeInsets.only(top:20.0),
+                      padding: const EdgeInsets.only(top:20.0),
                       child: SizedBox(
                         height: 60.sp,
                         width: 500.w,
-                        child: Text("To find out more or place an order, email us at giftcards@webjet.com.au. Our dedicated team will collate all of the required information and arrange for your eGift Cards to be delivered to your lucky recipients.",style: TextStyle(fontSize: 16),)),
+                        child: const Text("To find out more or place an order, email us at giftcards@webjet.com.au. Our dedicated team will collate all of the required information and arrange for your eGift Cards to be delivered to your lucky recipients.",style: TextStyle(fontSize: 16),)),
                     ),
                     ],
                   ),

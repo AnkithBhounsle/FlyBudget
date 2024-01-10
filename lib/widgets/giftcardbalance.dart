@@ -97,7 +97,7 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
               SizedBox(
               height: 50.sp,
               width: 440.w,
-              child: Padding(
+              child: const Padding(
                 padding: EdgeInsets.only(top:15.0),
                 child: Text("This is the 12 characters located above the barcode on the back of your plastic physical card, or on the front of your digital eGift Card.",style: TextStyle(color: Colors.grey,fontSize: 13),),
               )),
@@ -117,11 +117,11 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
                child: const Center(child: Text("Check Gift Card",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 18),))),
              ),
                Padding(
-                padding: EdgeInsets.only( top:15.0),
+                padding: const EdgeInsets.only( top:15.0),
                 child: SizedBox(
               height: 40.sp,
               width:440.w  ,
-              child: Text("For more information about gift card use, FAQs and for the full terms and conditions please visit the gift card page." ,  style: TextStyle(color: Colors.grey,fontSize: 13) ),),
+              child: const Text("For more information about gift card use, FAQs and for the full terms and conditions please visit the gift card page." ,  style: TextStyle(color: Colors.grey,fontSize: 13) ),),
               ),
                ] 
                 

@@ -100,7 +100,7 @@ class _ListPageState extends State<ListPage> {
           child:  SizedBox(
             width: 1500.w,
             height: 100.sp,
-            child: Text(
+            child: const Text(
               "Prices are subject to availability, include taxes and airline surcharges. All prices on this page are subject to change without notice. Whilst Webjet makes every effort to provide you with accurate and up-to-date information, in the event a product is listed at an incorrect price, whether due to typographical, photographic, or otherwise, Webjet may refuse or cancel any orders placed for a product listed at the incorrect price.,",
            style: TextStyle(fontSize: 20), ),
           ),

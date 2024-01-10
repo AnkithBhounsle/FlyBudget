@@ -20,15 +20,15 @@ class _InternationalDealsState extends State<InternationalDeals> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Jump to:",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                SizedBox(width: 8),
-                Text("Domestic deals"),
-                SizedBox(width: 8),
-                Text("International deals"),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
+                const Text("Domestic deals"),
+                const SizedBox(width: 8),
+                const Text("International deals"),
+                const SizedBox(width: 8),
                 Container(
                   height: 50.sp,
                   width: 150.w,
@@ -49,8 +49,8 @@ class _InternationalDealsState extends State<InternationalDeals> {
                 )
               ],
             ),
-            Center(
-              child: const Text(
+            const Center(
+              child: Text(
                 "Find a Domestic Flight Deal",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
               ),
@@ -62,7 +62,7 @@ class _InternationalDealsState extends State<InternationalDeals> {
                   "Departing from",
                   style: TextStyle(fontSize: 20),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 DropdownButtonHideUnderline(
                   child: DropdownButton<String>(
                     value: selectedValue,
@@ -84,12 +84,12 @@ class _InternationalDealsState extends State<InternationalDeals> {
                     }).toList(),
                   ),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 const Text(
                   "travelling to ",
                   style: TextStyle(fontSize: 20),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 DropdownButtonHideUnderline(
                   child: DropdownButton<String>(
                     value: selectedValue,
@@ -152,7 +152,7 @@ class _InternationalDealsState extends State<InternationalDeals> {
                           ),
                         ),
                         Padding(
-                          padding:  EdgeInsets.only(top: 8.0, bottom: 20),
+                          padding:  const EdgeInsets.only(top: 8.0, bottom: 20),
                           child: Container(
                             height: 30.sp,
                             width: 90.w,
@@ -161,7 +161,7 @@ class _InternationalDealsState extends State<InternationalDeals> {
                                 color: Colors.red),
                             child:  SizedBox(
                               height:  40.sp,
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "FEATURED",
                                   style: TextStyle(color: Colors.white),
@@ -172,7 +172,7 @@ class _InternationalDealsState extends State<InternationalDeals> {
                         ),
                         SizedBox(
                           height: 40.sp,
-                          child: Text(
+                          child: const Text(
                             "HONOLULU",
                             style: TextStyle(
                                 fontSize: 25,
@@ -182,7 +182,7 @@ class _InternationalDealsState extends State<InternationalDeals> {
                         ),
                          SizedBox(
                           height: 40.sp,
-                          child: Text(
+                          child: const Text(
                             "Return flight from",
                             style: TextStyle(color: Colors.white, fontSize: 18),
                           ),

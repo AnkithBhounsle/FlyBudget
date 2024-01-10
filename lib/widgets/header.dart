@@ -42,7 +42,7 @@ class _HeaderState extends State<Header> {
                 'My Account',
                 style: TextStyle(
                   fontSize: 12.sp,
-                  color: Color.fromARGB(255, 0, 0, 0),
+                  color: const Color.fromARGB(255, 0, 0, 0),
                 ),
               ),
               PopupMenuButton<String>(
@@ -71,7 +71,7 @@ class _HeaderState extends State<Header> {
                 'Manage Bookings',
                 style: TextStyle(
                   fontSize: 12.sp,
-                  color: Color.fromARGB(255, 255, 255, 255),
+                  color: const Color.fromARGB(255, 255, 255, 255),
                 ),
               ),
               PopupMenuButton<String>(
