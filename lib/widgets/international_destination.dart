@@ -86,7 +86,7 @@ class _DestinationState extends State<Destination> {
               shrinkWrap: true,
               itemBuilder: (BuildContext context, int index) {
                 return Padding(
-                  padding: EdgeInsets.only(right: 150, left: 100, top: 10),
+                  padding: const EdgeInsets.only(right: 150, left: 100, top: 10),
                   child: Container(
                     width: 300,
                     height: 100,

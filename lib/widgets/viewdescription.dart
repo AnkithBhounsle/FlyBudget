@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ViewDescriptionPage extends StatefulWidget {
   const ViewDescriptionPage({super.key});
@@ -18,7 +19,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
              children: [
                     SizedBox(
-                      width: 350,
+                      width: 350.w,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                        // mainAxisAlignment: MainAxisAlignment.start,
@@ -27,14 +28,14 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
                       const Center(child: Text('Chat with an agent ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),)),
                       const Text('A dedicated Customer Support team is available 24/7 on our messaging service to answer any queries you may have.') ,
                        SizedBox(
-                        height: 160,
+                        height: 160.sp,
                          child: Center(
                               child: Container(
                                 decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),borderRadius: BorderRadius.circular(5),
                                     color: Colors.grey),
-                                width: 165,
-                                height: 60,
+                                width: 165.w,
+                                height: 60.sp,
                                 child: TextButton(
                                   onPressed: () {
                                     // Add your action for the first button here
@@ -61,7 +62,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
                     ),
                      
                     SizedBox(
-                      width: 350,
+                      width: 350.w,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         //mainAxisAlignment: MainAxisAlignment.start,
@@ -70,14 +71,14 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
          const Center(child: Text('Speak to an agent',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25), )),
          const Text('24/7 support, please have your Webjet Booking Reference ready.'),
           SizedBox(
-            height: 200,
+            height: 200.sp,
             child: Center(
                               child: Container(
                                 decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),borderRadius: BorderRadius.circular(5),
                                     color: Colors.grey),
-                                width: 165,
-                                height: 60,
+                                width: 165.w,
+                                height: 60.sp,
                                 child: TextButton(
                                   onPressed: () {
                                     // Add your action for the first button here
@@ -98,7 +99,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
                       thickness: 1.5,
                     ),
                     SizedBox(
-                      width: 350,
+                      width: 350.w,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start ,
                        // mainAxisAlignment: MainAxisAlignment.start,
@@ -107,14 +108,14 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
                       const Center(child: Text('Provide feedback',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),)),
           const Text('We value your feedback. If you would like to share your experience using Webjet, wed love to hear from you.Complete our 2 minute survey and tell us how we can improve.')
                 , SizedBox(
-                  height: 150,
+                  height: 150.sp,
                   child: Center(
                               child: Container(
                                 decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(5),
                                     color: Colors.grey),
-                                width: 165,
-                                height: 60,
+                                width: 165.w,
+                                height: 60.sp,
                                 child: TextButton(
                                   onPressed: () {
                                     // Add your action for the first button here

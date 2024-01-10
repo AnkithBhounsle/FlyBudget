@@ -76,7 +76,7 @@ class _FlightsInHomeState extends State<FlightsInHome> {
                       children: [
                         Text(
                           list["description"],
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 13,
                           ),
                         ),
@@ -87,7 +87,7 @@ class _FlightsInHomeState extends State<FlightsInHome> {
               );
             },
             separatorBuilder: (BuildContext context, int index) {
-              return Divider(
+              return const Divider(
                 color: Color.fromARGB(255, 159, 159, 159),
                 thickness: 0.2,
               );

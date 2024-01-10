@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ChangeBooking1 extends StatefulWidget {
   const ChangeBooking1({super.key});
@@ -12,8 +13,8 @@ class _ChangeBookingState extends State<ChangeBooking1> {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        width: 1400,
-        height: 1700,
+        width: 1400.w,
+        height: 1700.sp,
         decoration: BoxDecoration(
             border: Border.all(color: const Color.fromARGB(255, 252, 251, 251)),
             color: const Color.fromARGB(255, 254, 254, 254)),
@@ -32,8 +33,8 @@ class _ChangeBookingState extends State<ChangeBooking1> {
             Padding(
               padding: const EdgeInsets.only(top: 20, right: 180),
               child: Container(
-                width: 1190,
-                height: 80,
+                width: 1190.w,
+                height: 80.sp,
                 decoration: const BoxDecoration(
                   color: Color.fromARGB(255, 251, 244, 222),
                 ),
@@ -56,22 +57,22 @@ class _ChangeBookingState extends State<ChangeBooking1> {
             Padding(
               padding: const EdgeInsets.only(top: 20, right: 180, bottom: 10),
               child: Container(
-                width: 1190,
-                height: 80,
+                width: 1190.w,
+                height: 80.sp,
                 decoration: const BoxDecoration(
                     color: Color.fromARGB(255, 246, 237, 237)),
-                child: const Padding(
-                  padding: EdgeInsets.only(left: 10),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 10),
                   child: Row(
                     children: [
-                      Icon(Icons.lightbulb, size: 20),
+                      const Icon(Icons.lightbulb, size: 20),
                       SizedBox(
-                        width: 10,
+                        width: 10.w,
                       ),
                       SizedBox(
-                        width: 1000,
-                        height: 30,
-                        child: Text(
+                        width: 1000.w,
+                        height: 30.sp,
+                        child: const Text(
                           "Tip: There is no additional Webjet service fee (already paid as part of your initial booking) to process your change or cancellation request via this page or accessing our Messaging service on support page. Important to note that airline fees may be applicable.",
                           style: TextStyle(
                               fontSize: 13,
@@ -86,8 +87,8 @@ class _ChangeBookingState extends State<ChangeBooking1> {
             Padding(
               padding: const EdgeInsets.only(left: 10, right: 190),
               child: Container(
-                width: 1190,
-                height: 45,
+                width: 1190.w,
+                height: 45.sp,
                 decoration: const BoxDecoration(
                   color: Color.fromARGB(255, 88, 88, 88),
                 ),
@@ -109,14 +110,14 @@ class _ChangeBookingState extends State<ChangeBooking1> {
             Padding(
               padding: const EdgeInsets.only(right: 180),
               child: Container(
-                width: 1190,
-                height: 1070,
+                width: 1190.w,
+                height: 1070.sp,
                 decoration: const BoxDecoration(
                   color: Color.fromARGB(255, 241, 241, 241),
                 ),
-                child: const Column(
+                child:  Column(
                   children: [
-                    Row(
+                    const Row(
                       children: [
                         Padding(
                           padding: EdgeInsets.only(top: 30, left: 10),
@@ -130,7 +131,7 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                         ),
                       ],
                     ),
-                    Row(
+                    const Row(
                       children: [
                         Padding(
                           padding: EdgeInsets.only(top: 2, left: 40),
@@ -142,9 +143,9 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                       ],
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 10.sp,
                     ),
-                    Row(
+                    const Row(
                       children: [
 
                         Padding(
@@ -165,9 +166,9 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                     Row(
                       children: [
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(left: 60),
                           child: Text(
                             "Select this option if you have a live booking and wish to change the date or time.",
@@ -177,19 +178,19 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                       ],
                     ),
                     SizedBox(
-                      height: 8,
+                      height: 8.sp,
                     ),
                     Row(
                       children: [
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(left: 40),
                           child: Icon(Icons.circle_outlined,
                               size: 20, color: Color.fromARGB(255, 23, 23, 23)),
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Cancel Flight(s)",
                           style: TextStyle(
                               color: Colors.black,
@@ -201,9 +202,9 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                     Row(
                       children: [
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(left: 60),
                           child: Text(
                             "Based on your airline's policy you could receive an airline credit, refund or further advice.",
@@ -213,19 +214,19 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                       ],
                     ),
                     SizedBox(
-                      height: 8,
+                      height: 8.sp,
                     ),
                     Row(
                       children: [
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(left: 40),
                           child: Icon(Icons.circle_outlined,
                               size: 20, color: Color.fromARGB(255, 23, 23, 23)),
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Book Flight(s) using airline credit",
                           style: TextStyle(
                               color: Colors.black,
@@ -237,9 +238,9 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                     Row(
                       children: [
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(left: 60),
                           child: Text(
                             "Select this option for previously cancelled flights where we have provided you with an airline credit email. Not valid for live flights that have not been cancelled.",
@@ -249,9 +250,9 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                       ],
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 30.sp,
                     ),
-                    Row(
+                    const Row(
                       children: [
                         Padding(
                           padding: EdgeInsets.only(left: 45),
@@ -266,19 +267,19 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                       ],
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 10.sp,
                     ),
                     Row(
                       children: [
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(left: 40),
                           child: Icon(Icons.circle_outlined,
                               size: 20, color: Color.fromARGB(255, 23, 23, 23)),
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Change Passenger",
                           style: TextStyle(color: Colors.black, fontSize: 13),
                         ),
@@ -287,9 +288,9 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                     Row(
                       children: [
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(left: 60),
                           child: Text(
                             "Select this option if you want to transfer a ticket to another passenger.",
@@ -299,19 +300,19 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                       ],
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 10.sp,
                     ),
                     Row(
                       children: [
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(left: 40),
                           child: Icon(Icons.circle_outlined,
                               size: 20, color: Color.fromARGB(255, 23, 23, 23)),
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Name Correction",
                           style: TextStyle(color: Colors.black, fontSize: 13),
                         ),
@@ -320,9 +321,9 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                     Row(
                       children: [
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.only(left: 60),
                           child: Text(
                             "Select this option if you want to update the name of an existing passenger.",

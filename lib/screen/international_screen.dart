@@ -12,7 +12,7 @@ class InternationalScreen extends StatefulWidget {
 class _InternationalScreenState extends State<InternationalScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [

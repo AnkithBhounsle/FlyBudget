@@ -12,7 +12,7 @@ class _FooterState extends State<Footer> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left:20, top: 20,right: 20,bottom: 20),
+      padding: const EdgeInsets.only(left: 20, top: 20, right: 20, bottom: 20),
       child: SizedBox(
         width: 1400.w,
         height: 300.h,
@@ -21,8 +21,8 @@ class _FooterState extends State<Footer> {
             Container(
               width: 200.w,
               height: 300.h,
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.grey, width: 1)),
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey, width: 1)),
               child: Column(
                 children: [
                   Container(
@@ -41,16 +41,16 @@ class _FooterState extends State<Footer> {
                     ),
                   ),
                   const SizedBox(height: 8),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
-                        SizedBox(width: 8),
-                        Text(
+                        SizedBox(width: 8.w),
+                        const Text(
                           "Flights",
                           style: TextStyle(
                               fontSize: 13,
@@ -60,18 +60,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10),
+                 Padding(
+                    padding: const EdgeInsets.only(left: 10),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Hotel",
                           style: TextStyle(
                               fontSize: 13,
@@ -81,18 +81,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Holiday Packages",
                           style: TextStyle(
                               fontSize: 13,
@@ -102,18 +102,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Car Hire",
                           style: TextStyle(
                               fontSize: 13,
@@ -123,18 +123,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Motorhomes",
                           style: TextStyle(
                               fontSize: 13,
@@ -144,18 +144,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Travel Insurance",
                           style: TextStyle(
                               fontSize: 13,
@@ -165,16 +165,16 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
-                        SizedBox(width: 8),
-                        Text(
+                        SizedBox(width: 8.w),
+                        const Text(
                           "Things to Do",
                           style: TextStyle(
                               fontSize: 13,
@@ -191,8 +191,8 @@ class _FooterState extends State<Footer> {
               width: 1,
             ),
             Container(
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.grey, width: 1)),
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey, width: 1)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -212,18 +212,18 @@ class _FooterState extends State<Footer> {
                     ),
                   ),
                   const SizedBox(height: 8),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text("About Webjet",
+                        const Text("About Webjet",
                             style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.grey,
@@ -232,18 +232,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Careers",
                           style: TextStyle(
                               fontSize: 13,
@@ -253,18 +253,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "The Webjet App",
                           style: TextStyle(
                               fontSize: 13,
@@ -274,18 +274,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Advertise on Webjet",
                           style: TextStyle(
                               fontSize: 13,
@@ -295,18 +295,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Terms and Conditions",
                           style: TextStyle(
                               fontSize: 13,
@@ -316,18 +316,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "The Webjet App",
                           style: TextStyle(
                               fontSize: 13,
@@ -337,18 +337,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Privacy/Security",
                           style: TextStyle(
                               fontSize: 13,
@@ -358,18 +358,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Investors",
                           style: TextStyle(
                               fontSize: 13,
@@ -379,18 +379,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Travel Blog",
                           style: TextStyle(
                               fontSize: 13,
@@ -400,18 +400,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                         width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Sitemap",
                           style: TextStyle(
                               fontSize: 13,
@@ -424,12 +424,12 @@ class _FooterState extends State<Footer> {
                 ],
               ),
             ),
-            const SizedBox(
-              width: 1,
+           SizedBox(
+              width: 1.w,
             ),
             Container(
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.grey, width: 1)),
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey, width: 1)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -450,18 +450,18 @@ class _FooterState extends State<Footer> {
                     ),
                   ),
                   const SizedBox(height: 8),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "About Webjet",
                           style: TextStyle(
                               fontSize: 13,
@@ -474,12 +474,12 @@ class _FooterState extends State<Footer> {
                 ],
               ),
             ),
-            const SizedBox(
-              width: 1,
+           SizedBox(
+              width: 1.w,
             ),
             Container(
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.grey, width: 1)),
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey, width: 1)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -500,18 +500,18 @@ class _FooterState extends State<Footer> {
                     ),
                   ),
                   const SizedBox(height: 8),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Contact us",
                           style: TextStyle(
                               fontSize: 13,
@@ -521,18 +521,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Use Airline Credit",
                           style: TextStyle(
                               fontSize: 13,
@@ -542,18 +542,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Check Gift Card Balance",
                           style: TextStyle(
                               fontSize: 13,
@@ -563,18 +563,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "FAQs",
                           style: TextStyle(
                               fontSize: 13,
@@ -584,18 +584,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.circle,
                           size: 5,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Feedback",
                           style: TextStyle(
                               fontSize: 13,
@@ -605,20 +605,20 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    height: 10,
+                   SizedBox(
+                    height: 10.sp,
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
                         SizedBox(
-                            width: 150,
-                            height: 50,
-                            child: Text(
+                            width: 150.w,
+                            height: 50.sp,
+                            child: const Text(
                               "Online booking changes are available 24/7",
                               style: TextStyle(
                                   fontSize: 13,
@@ -631,8 +631,8 @@ class _FooterState extends State<Footer> {
                   Padding(
                     padding: const EdgeInsets.only(left: 10.0),
                     child: Container(
-                        width: 160,
-                        height: 50,
+                        width: 160.w,
+                        height: 50.sp,
                         color: Colors.grey.shade200,
                         child: const Center(
                           child: Text(
@@ -648,12 +648,12 @@ class _FooterState extends State<Footer> {
                 ],
               ),
             ),
-            const SizedBox(
-              width: 1,
+             SizedBox(
+              width: 1.w,
             ),
             Container(
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.grey, width: 1)),
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey, width: 1)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -673,19 +673,19 @@ class _FooterState extends State<Footer> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 8),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   SizedBox(height: 8.sp),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.alternate_email,
                           size: 15,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Webjet Newsellector",
                           style: TextStyle(
                               fontSize: 13,
@@ -696,18 +696,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                   Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.facebook,
                           size: 15,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Webjet Facebook",
                           style: TextStyle(
                               fontSize: 13,
@@ -718,15 +718,15 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(Icons.camera_enhance, size: 15),
+                        const Icon(Icons.camera_enhance, size: 15),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Webjet Instagram",
                           style: TextStyle(
                               fontSize: 13,
@@ -737,18 +737,18 @@ class _FooterState extends State<Footer> {
                       ],
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.smart_display,
                           size: 15,
                         ),
                         SizedBox(
-                          width: 8,
+                          width: 8.w,
                         ),
-                        Text(
+                        const Text(
                           "Webjet YouTube",
                           style: TextStyle(
                               fontSize: 13,
@@ -762,7 +762,7 @@ class _FooterState extends State<Footer> {
               ),
             ),
           ],
-      
+
           //children
         ),
       ),

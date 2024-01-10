@@ -17,7 +17,7 @@ class ViewScreen extends StatefulWidget {
 class _ViewScreenState extends State<ViewScreen> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return  const Scaffold(
       body: SizedBox(
         width: double.infinity,
         height: 1100,

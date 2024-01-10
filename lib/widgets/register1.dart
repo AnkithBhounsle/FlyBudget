@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Register1Page extends StatefulWidget {
   const Register1Page({super.key});
@@ -14,8 +15,8 @@ class _Register1PageState extends State<Register1Page> {
        Scaffold(
          body: Center(
           child: Container(
-              height: 500,
-              width: 500,
+              height: 500.sp,
+              width: 500.w,
                decoration: BoxDecoration(
                                         border: Border.all(color: Colors.grey),
                                         color: Colors.black
@@ -46,8 +47,8 @@ class _Register1PageState extends State<Register1Page> {
                          // Text("Name",style: TextStyle(color: Colors.white    ,fontSize: 18),),
                          
                               Container(
-                                height: 50,
-                                 width: 400,
+                                height: 50.sp,
+                                 width: 400.w,
                                  decoration: BoxDecoration(
                                   border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(5),color: Colors.white,
                                  ),
@@ -73,8 +74,8 @@ class _Register1PageState extends State<Register1Page> {
                         children: [
                         
                              Container(
-                                height: 50,
-                                 width: 400,
+                                height: 50.sp,
+                                 width: 400.w,
                                  decoration: BoxDecoration(
                                   border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(5),color: Colors.white,
                                  ),
@@ -96,8 +97,8 @@ class _Register1PageState extends State<Register1Page> {
                         children: [
                         
                              Container(
-                                height: 50,
-                                 width: 400,
+                                height: 50.sp,
+                                 width: 400.w,
                                  decoration: BoxDecoration(
                                   border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(5),color: Colors.white,
                                  ),
@@ -123,8 +124,8 @@ class _Register1PageState extends State<Register1Page> {
                         children: [
                         
                              Container(
-                                height: 50,
-                                 width: 400,
+                                height: 50.sp,
+                                 width: 400.w,
                                  decoration: BoxDecoration(
                                   border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(5),color: Colors.white,
                                  ),
@@ -143,8 +144,8 @@ class _Register1PageState extends State<Register1Page> {
                             Padding(
                               padding: const EdgeInsets.only(top:15.0),
                               child: Container(
-                                  height: 50,
-                                   width: 400,
+                                  height: 50.sp,
+                                   width: 400.w,
                                    decoration: BoxDecoration(
                                     border: Border.all(color: Colors.green), borderRadius: BorderRadius.circular(5),color: Colors.green,
                                  

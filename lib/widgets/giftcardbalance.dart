@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class GiftCardBalancePage extends StatefulWidget {
   const GiftCardBalancePage({super.key});
@@ -44,8 +45,8 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
              padding:  const EdgeInsets.only(right: 1000,top: 12),
        
              child: Container(
-              height: 330,
-              width: 440,
+              height: 330.sp,
+              width: 440.w,
               decoration: BoxDecoration(
                 border: Border.all(color:Colors.grey ,),color: const Color.fromARGB(255, 235, 240, 244),
               ),
@@ -56,8 +57,8 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
                 
                 Container(
                   
-                  height : 50,
-                  width: 440,
+                  height : 50.sp,
+                  width: 440.w,
                   decoration: BoxDecoration(
                     border:  Border.all(color: const Color.fromARGB(255, 102, 109, 114),),
                                   color: const Color.fromARGB(255, 102, 109, 114),
@@ -73,8 +74,8 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
                  Padding(
                    padding: const EdgeInsets.only(top:15.0,left:3),
                    child: Container(
-                    height: 50,
-                     width: 430,
+                    height: 50.sp,
+                     width: 430.w,
                      decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(3),color: Colors.white,
                      ),
@@ -93,10 +94,10 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
                  ), 
               // Other properties
              
-             const SizedBox(
-              height: 50,
-              width: 440,
-              child: Padding(
+              SizedBox(
+              height: 50.sp,
+              width: 440.w,
+              child: const Padding(
                 padding: EdgeInsets.only(top:15.0),
                 child: Text("This is the 12 characters located above the barcode on the back of your plastic physical card, or on the front of your digital eGift Card.",style: TextStyle(color: Colors.grey,fontSize: 13),),
               )),
@@ -105,8 +106,8 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
              Padding(
               padding: const EdgeInsets.only(top:15.0,left: 4),
               child:   Container(
-               height: 50,
-              width: 430,
+               height: 50.sp,
+              width: 430.w,
               decoration: BoxDecoration(
                border: Border.all(
               color: const Color.fromARGB(255, 49, 171, 53)
@@ -115,12 +116,12 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
               ),
                child: const Center(child: Text("Check Gift Card",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 18),))),
              ),
-              const Padding(
-                padding: EdgeInsets.only( top:15.0),
+               Padding(
+                padding: const EdgeInsets.only( top:15.0),
                 child: SizedBox(
-              height: 40,
-              width:440  ,
-              child: Text("For more information about gift card use, FAQs and for the full terms and conditions please visit the gift card page." ,  style: TextStyle(color: Colors.grey,fontSize: 13) ),),
+              height: 40.sp,
+              width:440.w  ,
+              child: const Text("For more information about gift card use, FAQs and for the full terms and conditions please visit the gift card page." ,  style: TextStyle(color: Colors.grey,fontSize: 13) ),),
               ),
                ] 
                 
