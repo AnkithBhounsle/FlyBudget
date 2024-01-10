@@ -1,0 +1,30 @@
+{
+    "list": [
+        {
+            "id": "1",
+            "title": "Domestic Flights within Australia",
+            "isExpanded": false,
+            "description": "Flying to your next destination is made easy with Webjet; our choice of cheap flights and airlines, alongside comprehensive domestic specials is unparalleled. Choose between full-service airlines including Qantas and Virgin Australia, or keep your hip-pocket happy by booking airfares with a low-cost carrier such as Jetstar. Mix and match domestic airlines with Webjet today!"
+           
+        },
+        {
+            "id": "2",
+            "title": "Flights to New Zealand",
+            "isExpanded": false,
+            "description": "Flying to stunning New Zealand is made easy with Webjet; our selection of airlines and cheap deals on flights is unmatched. Choose between full-service airlines including Jetstar, Qantas,Virgin Australia and Air New Zealand. Check out our range of international flight specials, or even our business class specials if you’re looking to fly with luxurious comfort. With Webjet’s flight comparison tool, you’ll be able to book the best deals with ease."
+            
+        },
+        {
+            "id": "3",
+            "title": "International Flights",
+            "isExpanded": false,
+            "description": "When you search overseas airfares on Webjet, you can expect to find the best deals, along with an in-depth flight comparison across low-cost carriers and premium full-service airlines such as Emirates, Singapore Airlines, United Airlines and more. Wherever you’re headed on your next international trip, Webjet’s unbeatable selection of cheap airfares, flights and international specials will help you get there. Bundle and save to unlock extra savings! "
+        },
+        {
+            "id": "4",
+            "title": "Moe Then Cheap Flights At Flybudget",
+            "isExpanded": false,
+            "description": "While Webjet has budget-friendly airfares more than covered, you can also find and book everything else you’ll need for your upcoming trip away. When you use Webjet to organise your next getaway, no stone is left unturned; plan your trip with confidence and experience an unmatched world of choice."    
+        }
+    ]
+}
