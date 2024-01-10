@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Footer extends StatefulWidget {
   const Footer({super.key});
@@ -11,20 +12,20 @@ class _FooterState extends State<Footer> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 1400,
-      height: 270,
+      width: 1400.w,
+      height: 270.sp,
       child: Row(
         children: [
           Container(
-            width: 200,
-            height: 300,
+            width: 200.w,
+            height: 300.sp,
             decoration:
                 BoxDecoration(border: Border.all(color: Colors.grey, width: 1)),
             child: Column(
               children: [
                 Container(
-                  width: 200,
-                  height: 35,
+                  width: 200.w,
+                  height: 35.sp,
                   decoration: const BoxDecoration(color: Colors.grey),
                   child: const Center(
                     child: Text(
@@ -162,7 +163,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -170,7 +171,8 @@ class _FooterState extends State<Footer> {
                         Icons.circle,
                         size: 5,
                       ),
-                      SizedBox(width: 8),
+                      SizedBox(
+                        width: 8.w),
                       Text(
                         "Things to Do",
                         style: TextStyle(
@@ -194,8 +196,8 @@ class _FooterState extends State<Footer> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  width: 200,
-                  height: 35,
+                  width: 200.w,
+                  height: 35.sp,
                   decoration: const BoxDecoration(color: Colors.grey),
                   child: const Center(
                     child: Text(
@@ -208,8 +210,9 @@ class _FooterState extends State<Footer> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 8),
-                const Padding(
+                 SizedBox(
+                  height: 8.sp),
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -218,7 +221,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text("About Webjet",
                           style: TextStyle(
@@ -229,7 +232,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -238,7 +241,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Careers",
@@ -250,7 +253,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -259,7 +262,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "The Webjet App",
@@ -271,7 +274,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -280,7 +283,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Advertise on Webjet",
@@ -292,7 +295,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -301,7 +304,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Terms and Conditions",
@@ -313,7 +316,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -322,7 +325,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "The Webjet App",
@@ -334,7 +337,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -343,7 +346,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Privacy/Security",
@@ -355,7 +358,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -364,7 +367,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Investors",
@@ -376,7 +379,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -385,7 +388,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Travel Blog",
@@ -397,7 +400,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -406,7 +409,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Sitemap",
@@ -431,8 +434,8 @@ class _FooterState extends State<Footer> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  width: 200,
-                  height: 35,
+                  width: 200.w,
+                  height: 35.sp,
                   decoration: const BoxDecoration(color: Colors.grey),
                   child: const Center(
                     child: Text(
@@ -447,7 +450,7 @@ class _FooterState extends State<Footer> {
                   ),
                 ),
                 const SizedBox(height: 8),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -456,7 +459,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "About Webjet",
@@ -481,8 +484,8 @@ class _FooterState extends State<Footer> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  width: 200,
-                  height: 35,
+                  width: 200.w,
+                  height: 35.sp,
                   decoration: const BoxDecoration(color: Colors.grey),
                   child: const Center(
                     child: Text(
@@ -496,8 +499,8 @@ class _FooterState extends State<Footer> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 8),
-                const Padding(
+                 SizedBox(height: 8),
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -506,7 +509,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Contact us",
@@ -518,7 +521,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -527,7 +530,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Use Airline Credit",
@@ -539,7 +542,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -548,7 +551,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Check Gift Card Balance",
@@ -560,7 +563,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -569,7 +572,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "FAQs",
@@ -581,7 +584,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -590,7 +593,7 @@ class _FooterState extends State<Footer> {
                         size: 5,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Feedback",
@@ -602,19 +605,19 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const SizedBox(
-                  height: 10,
+                SizedBox(
+                  height: 10.sp,
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       SizedBox(
-                          width: 150,
-                          height: 50,
+                          width: 150.w,
+                          height: 50.sp,
                           child: Text(
                             "Online booking changes are available 24/7",
                             style: TextStyle(
@@ -628,8 +631,8 @@ class _FooterState extends State<Footer> {
                 Padding(
                   padding: const EdgeInsets.only(left: 10.0),
                   child: Container(
-                      width: 160,
-                      height: 50,
+                      width: 160.w,
+                      height: 50.sp,
                       color: Colors.grey.shade200,
                       child: const Center(
                         child: Text(
@@ -645,8 +648,8 @@ class _FooterState extends State<Footer> {
               ],
             ),
           ),
-          const SizedBox(
-            width: 1,
+           SizedBox(
+            width: 1.w,
           ),
           Container(
             decoration:
@@ -655,8 +658,8 @@ class _FooterState extends State<Footer> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  width: 200,
-                  height: 35,
+                  width: 200.w,
+                  height: 35.sp,
                   decoration: const BoxDecoration(color: Colors.grey),
                   child: const Center(
                     child: Text(
@@ -670,8 +673,9 @@ class _FooterState extends State<Footer> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 8),
-                const Padding(
+                 SizedBox(
+                  height: 8.sp),
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -680,7 +684,7 @@ class _FooterState extends State<Footer> {
                         size: 15,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Webjet Newsellector",
@@ -693,7 +697,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -702,7 +706,7 @@ class _FooterState extends State<Footer> {
                         size: 15,
                       ),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Webjet Facebook",
@@ -715,13 +719,13 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
                       Icon(Icons.camera_enhance, size: 15),
                       SizedBox(
-                        width: 8,
+                        width: 8.w,
                       ),
                       Text(
                         "Webjet Instagram",
@@ -734,7 +738,7 @@ class _FooterState extends State<Footer> {
                     ],
                   ),
                 ),
-                const Padding(
+                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
                   child: Row(
                     children: [
@@ -742,7 +746,7 @@ class _FooterState extends State<Footer> {
                         Icons.smart_display,
                         size: 15,
                       ),
-                      SizedBox( width: 8,
+                      SizedBox( width: 8.w,
                       ),
                       Text("Webjet YouTube",style: TextStyle(fontSize: 13,color: Colors.grey,decoration: TextDecoration.none),
                       ),

@@ -16,6 +16,7 @@ class _MyWidgetState extends State<OnlineCheckin> {
         child: Center(
           child: Container(
             width: 1400,
+            
             height: 1700,
             decoration: BoxDecoration(
               border: Border.all(color: const Color.fromARGB(243, 239, 239, 239)), color: Colors.white),

@@ -22,7 +22,7 @@ class _HeaderState extends State<Header> {
     return Column(
       children: [
         Container(
-          width: 1280.w,
+          width: 1400.w,
           height: 100.h,
           color: const Color.fromARGB(121, 18, 199, 18),
           child: Row(

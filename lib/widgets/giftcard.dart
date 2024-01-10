@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class GiftCard extends StatefulWidget {
   const GiftCard({super.key});
@@ -34,11 +35,11 @@ class _GiftCardState extends State<GiftCard> {
                     ),
             Image.asset('assets/download (1).jpg',height: 200, width: 300, ),
          const Text('One gift card, thousands of adventures.',style: TextStyle(  fontWeight: FontWeight.bold,fontSize: 50),),
-               const Padding(
+                Padding(
                  padding: EdgeInsets.only(top:20.0),
                  child: SizedBox(
-                  height: 50,
-                  width: 1000,
+                  height: 50.sp,
+                  width: 1000.w,
                   child: Text("Whether you're treating a loved one or want to thank a customer, client or employee, the gift of travel makes the perfect present.Webjet Gift Cards can be redeemed on flights, holiday packages and hotel bookings**, and, best of all, offer a 3-year validity for ultimate booking flexibility.",style: TextStyle( color: Colors.black,fontSize: 15),textAlign: TextAlign.center,)),
                ),
            Row(
@@ -46,8 +47,8 @@ class _GiftCardState extends State<GiftCard> {
                Padding(
                                     padding: const EdgeInsets.only(left: 500.0,top: 50),
                                     child: Container(
-                                        height: 50,
-                                         width: 300,
+                                        height: 50.sp,
+                                         width: 300.w,
                                          decoration: BoxDecoration(
                                           border: Border.all(color: const Color.fromARGB(255, 72, 238, 77)), borderRadius: BorderRadius.circular(4),color: const Color.fromARGB(255, 55, 223, 61),
                                        
@@ -58,8 +59,8 @@ class _GiftCardState extends State<GiftCard> {
                                    Padding(
                                     padding: const EdgeInsets.only(left: 15.0,top: 50),
                                     child: Container(
-                                        height: 50,
-                                         width: 250,
+                                        height: 50.sp,
+                                         width: 250.w,
                                          decoration: BoxDecoration(
                                           border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(4),color:Colors.grey,
                                        
@@ -72,29 +73,29 @@ class _GiftCardState extends State<GiftCard> {
                Row(
             children: [
            Padding(
-                padding: const EdgeInsets.only(top:50.0),
+                padding:  EdgeInsets.only(top:50.0),
                 child: Column(
                   children: [
                     const Text("Webjet eGift Cards",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold),),
-                     const Padding(
+                      Padding(
                        padding: EdgeInsets.only(top:20.0),
                        child: SizedBox(
-                        height: 60,
-                        width: 500,
+                        height: 60.sp,
+                        width: 500.w,
                         child: Text("Need your gift in a hurry? You can order a Webjet eGift Card online and receive it instantly via email in a print-friendly format.",style: TextStyle(fontSize: 16,),)),
                      ),
-                  const Padding(
+                   Padding(
                     padding: EdgeInsets.only(top:20.0),
                     child: SizedBox(
-                      height: 60,
-                      width: 500,
+                      height: 60.sp,
+                      width: 500.w,
                       child: Text("Simply select the 'Purchase an eGift Card' button below, choose your eGift Card value from 20 to 5,000, and enter your recipient's details.",style: TextStyle(fontSize: 16),)),
                   ),
-                  const Padding(
+                   Padding(
                    padding: EdgeInsets.only(top:20.0),
                     child: SizedBox(
-                  height: 100,
-                  width: 500,
+                  height: 100.sp,
+                  width: 500.w,
                   
                       child: Text("To redeem, enter the unique card number into the Gift Card field on the payment page when making a booking. Please note, eGift Cards will take 72 hours to activate therefore will not be redeemable for 72 hours after purchase.",style: TextStyle(fontSize: 16,),)),
                   ),
@@ -102,8 +103,8 @@ class _GiftCardState extends State<GiftCard> {
                     Padding(
                                       padding: const EdgeInsets.only(left: 500.0,top: 50),
                                       child: Container(
-                                          height: 50,
-                                           width: 300,
+                                          height: 50.sp,
+                                           width: 300.w,
                                            decoration: BoxDecoration(
                                             border: Border.all(color: const Color.fromARGB(255, 72, 238, 77)), borderRadius: BorderRadius.circular(4),color: const Color.fromARGB(255, 55, 223, 61),
                                          
@@ -123,7 +124,7 @@ class _GiftCardState extends State<GiftCard> {
                padding: const EdgeInsets.only(left:200.0,bottom: 0),
                child: Image.asset('assets/2469_thumb2.png',height: 500, width: 500,),
              ),
-                const Padding(
+                 Padding(
                 padding: EdgeInsets.only(top:40.0,left: 200),
                 child: Column(
                   children: [
@@ -131,22 +132,22 @@ class _GiftCardState extends State<GiftCard> {
                      Padding(
                        padding: EdgeInsets.only(top:20.0),
                        child: SizedBox(
-                        height: 60,
-                        width: 500,
+                        height: 60.sp,
+                        width: 500.w,
                         child: Text("A Webjet Gift Card is perfect for any special occasion. You can purchase a physical Webjet \$100, \$200 or Variable gift card (\$20-\$500) from major retailers such as Coles, Woolworths, Australia Post, BIG W and more." ,style: TextStyle(fontSize: 16,),)),
                      ),
                   Padding(
                     padding: EdgeInsets.only(top:20.0),
                     child: SizedBox(
-                      height: 60,
-                      width: 500,
+                      height: 60.sp,
+                      width: 500.w,
                       child: Text("Your lucky recipient can use their Webjet Gift Card on a flight, holiday package and hotel booking*. ",style: TextStyle(fontSize: 16),)),
                   ),
                   Padding(
                    padding: EdgeInsets.only(top:20.0),
                     child: SizedBox(
-                  height: 100,
-                  width: 500,
+                  height: 100.sp,
+                  width: 500.w,
                    child: Text(" To redeem, enter the unique card number into the Gift Card field on the payment page when making a booking.",style: TextStyle(fontSize: 16,),)),
                   ),
                    ],
@@ -158,7 +159,7 @@ class _GiftCardState extends State<GiftCard> {
                  padding: const EdgeInsets.only(bottom:400.0),
                  child: Row(
                          children: [
-                          const Padding(
+                           Padding(
                   padding: EdgeInsets.only(left: 200,bottom: 100),
                   child: Column(
                     children: [
@@ -166,15 +167,15 @@ class _GiftCardState extends State<GiftCard> {
                        Padding(
                          padding: EdgeInsets.only(top:20.0),
                          child: SizedBox(
-                          height: 60,
-                          width: 500,
+                          height: 60.sp,
+                          width: 500.w,
                           child: Text(" Treat your customers or reward your employees with the gift of travel.",style: TextStyle(fontSize: 16,),)),
                        ),
                     Padding(
                       padding: EdgeInsets.only(top:20.0),
                       child: SizedBox(
-                        height: 60,
-                        width: 500,
+                        height: 60.sp,
+                        width: 500.w,
                         child: Text("To find out more or place an order, email us at giftcards@webjet.com.au. Our dedicated team will collate all of the required information and arrange for your eGift Cards to be delivered to your lucky recipients.",style: TextStyle(fontSize: 16),)),
                     ),
                     ],
@@ -195,8 +196,8 @@ class _GiftCardState extends State<GiftCard> {
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.black),
               ),
-              width: 540,
-              height: 161,
+              width: 540.w,
+              height: 161.sp,
               child: Padding(
                 padding: const EdgeInsets.only(left: 20, top: 25),
                 child: Row(
@@ -215,8 +216,8 @@ class _GiftCardState extends State<GiftCard> {
             children: [
               
                  Container(
-                      height: 50,
-                       width: 200,
+                      height: 50.sp,
+                       width: 200.w,
                        decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(3),color: Colors.white,
                        ),
@@ -240,8 +241,8 @@ class _GiftCardState extends State<GiftCard> {
                       border: Border.all(color:  Colors.green), borderRadius: BorderRadius.circular(3),
                        color: Colors.green),
                                          
-                                      width: 100,
-                                      height: 50,
+                                      width: 100.w,
+                                      height: 50.sp,
                                       child: const Center(
                                           child: Text(
                                             "Subscribe",
