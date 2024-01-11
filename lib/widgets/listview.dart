@@ -3,6 +3,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Listview extends StatefulWidget {
   const Listview({super.key});
@@ -67,7 +68,7 @@ class _ListviewState extends State<Listview> {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 20),
+                       SizedBox(height: 20.sp),
                       if (isExpanded)...{
                         Column(
                           children: [

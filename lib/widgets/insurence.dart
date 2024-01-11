@@ -1,6 +1,7 @@
      import 'package:flutter/material.dart';
 // ignore: unnecessary_import
 import 'package:flutter/widgets.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class InsurencePage extends StatefulWidget {
   const InsurencePage({super.key});
@@ -33,8 +34,8 @@ class _InsurencePageState extends State<InsurencePage> {
           Padding(
             padding: const EdgeInsets.only(top:30.0),
             child: Container(
-                                  height: 50,
-                                   width: 300,
+                                  height: 50.sp,
+                                   width: 300.w,
                                    decoration: BoxDecoration(
                                   border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(5),color: Colors.white,
                                          ),
@@ -66,8 +67,8 @@ class _InsurencePageState extends State<InsurencePage> {
                Padding(
                  padding: const EdgeInsets.only(top:20.0),
                  child: Container(
-                                        height: 50,
-                                         width: 300,
+                                        height: 50.sp,
+                                         width: 300.w,
                                          decoration: BoxDecoration(
                                           border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(5),color: Colors.white,
                                          ),
@@ -93,8 +94,8 @@ class _InsurencePageState extends State<InsurencePage> {
                  child: Container(
              
              
-                                        height: 50,
-                                         width: 300,
+                                        height: 50.sp,
+                                         width: 300.w,
                                          decoration: BoxDecoration(
                                           border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(5),color: Colors.white,
                                          ),
@@ -124,8 +125,8 @@ class _InsurencePageState extends State<InsurencePage> {
                  child: Row(
                          children: [
                            Container(
-                  height: 40,
-                  width: 40,
+                  height: 40.sp,
+                  width: 40.w,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black)
                            ),
@@ -133,8 +134,8 @@ class _InsurencePageState extends State<InsurencePage> {
                  Padding(
                    padding: const EdgeInsets.only(left:10.0),
                    child: Container(
-                    height: 40,
-                    width: 40,
+                    height: 40.sp,
+                    width: 40.w,
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.black)
                            ),
@@ -143,7 +144,7 @@ class _InsurencePageState extends State<InsurencePage> {
                            ],
                            ),
                ),
-           const Padding(
+           Padding(
       padding: EdgeInsets.only(top:20.0),
       child: Column(
            children: [
@@ -152,8 +153,8 @@ class _InsurencePageState extends State<InsurencePage> {
                child: Text('Do all travellers:',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),),
              ),
              SizedBox(
-              height:120 ,
-              width: 220,
+              height:120.sp ,
+              width: 220.w,
               child: Text('Currently live in Australia and hold a valid Australian Medicare card or visa allowing them to live, work or study in Australia?',style: TextStyle( fontSize: 18),),),
           Center(
                         child: Text("GET A QUOTE",

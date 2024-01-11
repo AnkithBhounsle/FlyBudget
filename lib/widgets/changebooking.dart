@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ChangeBooking extends StatefulWidget {
   const ChangeBooking({super.key});
@@ -14,7 +15,7 @@ class _ChangeBookingState extends State<ChangeBooking> {
       children: [
         Container(
            margin:const EdgeInsets.all(10),
-          height: 70,
+          height: 70.sp,
           width: double.infinity,
           color: const Color.fromARGB(255, 232, 212, 154),
           child: const Center(child: Padding(
@@ -25,7 +26,7 @@ class _ChangeBookingState extends State<ChangeBooking> {
 
         Container(
        margin:const EdgeInsets.all(10),
-      height: 100,
+      height: 100.sp,
       width: double.infinity,
       color: const Color.fromARGB(255, 239, 238, 171),
       child: const Center(child: Padding(
@@ -36,7 +37,7 @@ class _ChangeBookingState extends State<ChangeBooking> {
 
     Container(
       margin:const EdgeInsets.all(10),
-      height: 50,
+      height: 50.sp,
       width: double.infinity,
       color: Colors.black,
       child: 
@@ -47,7 +48,7 @@ class _ChangeBookingState extends State<ChangeBooking> {
     ),
 
     Container(
-      height: 500,
+      height: 500.sp,
       width: double.infinity,
       color: Colors.grey,
       child: const Column(

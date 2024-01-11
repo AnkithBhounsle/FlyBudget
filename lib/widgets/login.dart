@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyLogin extends StatefulWidget {
   const MyLogin({super.key});
@@ -19,14 +20,14 @@ class _MyLoginState extends State<MyLogin> {
             padding: const EdgeInsets.only(left: 508),
             child: Container(
               color: const Color.fromARGB(255, 46, 45, 45),
-              width: 500,
-              height: 480,
+              width: 500.w,
+              height: 480.sp,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    height: 70,
-                    width: 500,
+                    height: 70.sp,
+                    width: 500.w,
                     color: Colors.red,
                     child: Image.asset('assets/plane.png'),
                   ),
@@ -44,22 +45,22 @@ class _MyLoginState extends State<MyLogin> {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 10),
+                   SizedBox(height: 10.sp),
                   const Padding(
                     padding: EdgeInsets.only(left: 10, right: 10),
                   ),
-                  const SizedBox(height: 10),
+                   SizedBox(height: 10.sp),
                   Padding(
                     padding: const EdgeInsets.all(10),
                     child: Row(
                       children: [
-                        const SizedBox(width: 10),
+                         SizedBox(width: 10.w),
                         Padding(
                           padding: const EdgeInsets.only(left: 30, right: 30),
                           child: Center(
                             child: Container(
-                              width: 400,
-                              height: 50,
+                              width: 400.w,
+                              height: 50.sp,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10.0),
                                   color:
@@ -87,12 +88,12 @@ class _MyLoginState extends State<MyLogin> {
                       const Padding(
                         padding: EdgeInsets.only(left: 10),
                       ),
-                      const SizedBox(width: 10),
+                     SizedBox(width: 10.w),
                       Padding(
                         padding: const EdgeInsets.only(left: 30, right: 30),
                         child: Container(
-                          width: 400,
-                          height: 50,
+                          width: 400.w,
+                          height: 50.sp,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10.0),
                               color: const Color.fromARGB(255, 255, 255, 255)),
@@ -146,7 +147,7 @@ class _MyLoginState extends State<MyLogin> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 30),
+                   SizedBox(height: 30.sp),
                   Padding(
                     padding: const EdgeInsets.only(
                       left: 170,

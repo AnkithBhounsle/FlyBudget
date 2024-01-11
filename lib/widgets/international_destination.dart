@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Destination extends StatefulWidget {
   const Destination({super.key});
@@ -34,8 +35,8 @@ class _DestinationState extends State<Destination> {
     return Padding(
       padding: const EdgeInsets.only(left: 30, top: 30),
       child: Container(
-        width: 1200,
-        height: 2400,
+        width: 1200.w,
+        height: 2400.sp,
         decoration: BoxDecoration(
             border: Border.all(color: const Color.fromARGB(255, 227, 226, 226)),
             color: const Color.fromARGB(255, 234, 233, 233)),
@@ -61,7 +62,7 @@ class _DestinationState extends State<Destination> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            const Row(
+             Row(
               children: [
                 Padding(
                   padding: EdgeInsets.only(left: 100),
@@ -69,7 +70,7 @@ class _DestinationState extends State<Destination> {
                       size: 20, color: Color.fromARGB(255, 23, 23, 23)),
                 ),
                 SizedBox(
-                  width: 8,
+                  width: 8.w,
                 ),
                 Text(
                   "Departing from",
@@ -86,10 +87,10 @@ class _DestinationState extends State<Destination> {
               shrinkWrap: true,
               itemBuilder: (BuildContext context, int index) {
                 return Padding(
-                  padding: EdgeInsets.only(right: 150, left: 100, top: 10),
+                  padding: const EdgeInsets.only(right: 150, left: 100, top: 10),
                   child: Container(
-                    width: 300,
-                    height: 100,
+                    width: 300.w,
+                    height: 100.sp,
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: const Color.fromARGB(255, 255, 253, 253),
@@ -103,8 +104,8 @@ class _DestinationState extends State<Destination> {
                           padding: const EdgeInsets.only(left: 20),
                           child: Image.asset(
                             'assets/batik-air.png',
-                            height: 60,
-                            width: 60,
+                            height: 60.sp,
+                            width: 60.w,
                           ),
                         ),
                         Column(

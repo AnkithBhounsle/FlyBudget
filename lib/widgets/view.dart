@@ -64,7 +64,7 @@ class _ViewPageState extends State<ViewPage> {
                   Padding(
                     padding: const EdgeInsets.only(top:18.0),
                     child: SizedBox(
-                      height: 60.sp,
+                      height: 60,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -72,8 +72,8 @@ class _ViewPageState extends State<ViewPage> {
                             "I want to :",
                             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
-                          SizedBox(
-                            width: 30.w,
+                          const SizedBox(
+                            width: 30,
                           ),
                           Center(
                             child: Container(

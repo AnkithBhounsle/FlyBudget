@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ListPage extends StatefulWidget {
   const ListPage({Key? key}) : super(key: key);
@@ -33,35 +34,7 @@ class _ListPageState extends State<ListPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        
-  
        
-     
-          
-                
-                  
-                    
-                    
-                        
-                          
-                            
-                        
-                           
-                         
-                         
-                          
-                            
-                            
-                             
-                                
-                                
-                               
-                                  
-                            
-                        
-                        
-                      
-        
         Padding(
           padding: const EdgeInsets.only(left: 30.0),
           child: ListView.builder(
@@ -99,7 +72,7 @@ class _ListPageState extends State<ListPage> {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 20),
+                       SizedBox(height: 20.sp),
                       if (isExpanded)...{
                         Column(
                           children: [
@@ -108,8 +81,7 @@ class _ListPageState extends State<ListPage> {
                               padding: const EdgeInsets.only(left: 30.0,top:20),
                               child: Text(list["description"]),
                             ),
-
-                          ],
+],
                         ),
                       },
                     ],
@@ -121,15 +93,14 @@ class _ListPageState extends State<ListPage> {
                 ],
               );
             },
-
-          ),
+              ),
         ),
         Padding(
           padding: const EdgeInsets.only(top:80.0,left: 15),
-          child: const SizedBox(
-            width: 1500,
-            height: 100,
-            child: Text(
+          child:  SizedBox(
+            width: 1500.w,
+            height: 100.sp,
+            child: const Text(
               "Prices are subject to availability, include taxes and airline surcharges. All prices on this page are subject to change without notice. Whilst Webjet makes every effort to provide you with accurate and up-to-date information, in the event a product is listed at an incorrect price, whether due to typographical, photographic, or otherwise, Webjet may refuse or cancel any orders placed for a product listed at the incorrect price.,",
            style: TextStyle(fontSize: 20), ),
           ),
@@ -140,8 +111,8 @@ class _ListPageState extends State<ListPage> {
               border: Border.all(color: Colors.grey),
               color: Colors.grey,
             ),
-            width: 113,
-            height: 50,
+            width: 113.w,
+            height: 50.sp,
             child: Row(
               children: [
                 InkWell(

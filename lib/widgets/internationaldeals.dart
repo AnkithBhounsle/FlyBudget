@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class InternationalDeals extends StatefulWidget {
   const InternationalDeals({super.key});
@@ -19,18 +20,18 @@ class _InternationalDealsState extends State<InternationalDeals> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Jump to:",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                SizedBox(width: 8),
-                Text("Domestic deals"),
-                SizedBox(width: 8),
-                Text("International deals"),
-                SizedBox(width: 8),
+                 SizedBox(width: 8.w),
+                const Text("Domestic deals"),
+                 SizedBox(width: 8.w),
+                const Text("International deals"),
+                 SizedBox(width: 8.w),
                 Container(
-                  height: 50,
-                  width: 150,
+                  height: 50.sp,
+                  width: 150.w,
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: const Color.fromARGB(255, 59, 242, 65),
@@ -48,9 +49,11 @@ class _InternationalDealsState extends State<InternationalDeals> {
                 )
               ],
             ),
-            const Text(
-              "Find a Domestic Flight Deal",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            const Center(
+              child: Text(
+                "Find a Domestic Flight Deal",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -59,7 +62,7 @@ class _InternationalDealsState extends State<InternationalDeals> {
                   "Departing from",
                   style: TextStyle(fontSize: 20),
                 ),
-                SizedBox(width: 8),
+                 SizedBox(width: 8.w),
                 DropdownButtonHideUnderline(
                   child: DropdownButton<String>(
                     value: selectedValue,
@@ -81,12 +84,12 @@ class _InternationalDealsState extends State<InternationalDeals> {
                     }).toList(),
                   ),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 const Text(
                   "travelling to ",
                   style: TextStyle(fontSize: 20),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 DropdownButtonHideUnderline(
                   child: DropdownButton<String>(
                     value: selectedValue,
@@ -111,108 +114,106 @@ class _InternationalDealsState extends State<InternationalDeals> {
               ],
             ),
             SizedBox(
-              height: 8,
+              height: 8.sp,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Stack(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 200.0, bottom: 150),
-                      child: Positioned(
-                        child: Image.asset(
-                          'assets/honoluluv2.jpg',
-                          height: 400,
-                          width: 350,
-                          fit: BoxFit.cover,
-                        ),
+                    Positioned(
+                      child: Image.asset(
+                        'assets/honoluluv2.jpg',
+                        height: 400.sp,
+                        width: 350.w,
+                        fit: BoxFit.cover,
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 300.0, top: 50),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          SizedBox(
-                            height: 60,
-                            width: 70,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.white),
-                                  color: Colors.white),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          height: 60.sp,
+                          width: 70.w,
+                          child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.white),
+                                color: Colors.white),
+                            child: const Center(
+                              child: Text(
+                                "HAWAIIAN",
+                                style: TextStyle(
+                                    color: Color.fromARGB(255, 12, 141, 246),
+                                    fontSize: 13),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding:  const EdgeInsets.only(top: 8.0, bottom: 20),
+                          child: Container(
+                            height: 30.sp,
+                            width: 90.w,
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.red),
+                                color: Colors.red),
+                            child:  SizedBox(
+                              height:  40.sp,
                               child: const Center(
                                 child: Text(
-                                  "HAWAIIAN",
-                                  style: TextStyle(
-                                      color: Color.fromARGB(255, 12, 141, 246),
-                                      fontSize: 13),
+                                  "FEATURED",
+                                  style: TextStyle(color: Colors.white),
                                 ),
                               ),
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 8.0, bottom: 20),
-                            child: Container(
-                              height: 30,
-                              width: 90,
-                              decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.red),
-                                  color: Colors.red),
-                              child: const SizedBox(
-                                height: 40,
-                                child: Center(
-                                  child: Text(
-                                    "FEATURED",
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 40,
-                            child: Text(
-                              "HONOLULU",
-                              style: TextStyle(
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 40,
-                            child: Text(
-                              "Return flight from",
-                              style: TextStyle(color: Colors.white, fontSize: 18),
-                            ),
-                          ),
-                          const Text(
-                            "\$1584*",
+                        ),
+                        SizedBox(
+                          height: 40.sp,
+                          child: const Text(
+                            "HONOLULU",
                             style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 35,
-                                fontWeight: FontWeight.bold),
+                                fontSize: 25,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
-                        ],
-                      ),
+                        ),
+                         SizedBox(
+                          height: 40.sp,
+                          child: const Text(
+                            "Return flight from",
+                            style: TextStyle(color: Colors.white, fontSize: 18),
+                          ),
+                        ),
+                        const Text(
+                          "\$1584*",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 35,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ],
                 ),
+                SizedBox(
+                  width: 20.w,
+                ),
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Row(
                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Stack(
                           children: [
                             Positioned(
                               child: Image.asset('assets/queenstownv2.jpg',
-                                  height: 150, width: 350, fit: BoxFit.cover),
+                                  height: 150.sp, width: 350.w, fit: BoxFit.cover),
                             ),
                             const Column(
                               children: [
@@ -239,15 +240,20 @@ class _InternationalDealsState extends State<InternationalDeals> {
                                 ),
                               ],
                             ),
+
                           ],
                         ),
+                         SizedBox(
+                  width: 20.w,
+                  height: 20.sp,
+                ),
                         Stack(
                           children: [
                             Positioned(
                               child: Image.asset(
                                 'assets/phuketv3.jpg',
-                                height: 150,
-                                width: 350,
+                                height: 150.sp,
+                                width: 350.w,
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -280,6 +286,10 @@ class _InternationalDealsState extends State<InternationalDeals> {
                         ),
                       ],
                     ),
+                     SizedBox(
+                  width: 20.w,
+                  height:20.sp,
+                ),
                     Row(
                       children: [
                         Stack(
@@ -288,6 +298,7 @@ class _InternationalDealsState extends State<InternationalDeals> {
                                 child: Image.asset('assets/aucklandv2.jpg',
                                     height: 150, width: 350, fit: BoxFit.cover)),
                             const Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
                                   "AUCKLAND",
@@ -316,6 +327,10 @@ class _InternationalDealsState extends State<InternationalDeals> {
                             ),
                           ],
                         ),
+                         SizedBox(
+                  width: 20.w,
+                  height:20.sp,
+                ),
                         Stack(
                           children: [
                             Positioned(
@@ -362,6 +377,9 @@ class _InternationalDealsState extends State<InternationalDeals> {
                 ),
               ],
             ),
+             SizedBox(
+                  width: 20.w,
+                ),
             Row(
               mainAxisAlignment:MainAxisAlignment.center,
               children: [
@@ -370,12 +388,14 @@ class _InternationalDealsState extends State<InternationalDeals> {
                     Positioned(
                       child: Image.asset(
                         'assets/manila.jpg',
-                        height: 150,
-                        width: 350,
+                        height: 150.sp,
+                        width: 350.w,
                         fit: BoxFit.cover,
                       ),
                     ),
                     const Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                       mainAxisAlignment:MainAxisAlignment.center,
                       children: [
                         Text(
                           "MANILA",
@@ -404,20 +424,23 @@ class _InternationalDealsState extends State<InternationalDeals> {
                     ),
                   ],
                 ),
+                 SizedBox(
+                  width: 20.w,
+                ),
                 Stack(
                   children: [
                     Positioned(
                       child: Image.asset(
                         'assets/default.jpg',
-                        height: 150,
-                        width: 350,
+                        height: 150.sp,
+                        width: 350.w,
                         fit: BoxFit.cover,
                       ),
                     ),
                     const Column(
                       children: [
                         Text(
-                          "",
+                          "Russia",
                           style: TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
@@ -441,13 +464,16 @@ class _InternationalDealsState extends State<InternationalDeals> {
                     ),
                   ],
                 ),
+                 SizedBox(
+                  width: 20.w,
+                ),
                 Stack(
                   children: [
                     Positioned(
                       child: Image.asset(
                         'assets/los_angeles.jpg',
-                        height: 150,
-                        width: 350,
+                        height: 150.sp,
+                        width: 350.w,
                         fit: BoxFit.cover,
                       ),
                     ),

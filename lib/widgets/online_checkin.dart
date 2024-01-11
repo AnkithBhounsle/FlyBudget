@@ -16,6 +16,7 @@ class _MyWidgetState extends State<OnlineCheckin> {
         child: Center(
           child: Container(
             width: 1400,
+            
             height: 1700,
             decoration: BoxDecoration(
               border: Border.all(color: const Color.fromARGB(243, 239, 239, 239)), color: Colors.white),
@@ -39,6 +40,11 @@ class _MyWidgetState extends State<OnlineCheckin> {
                         Container(
                           width: 270,
                           height: 345,
+                  
+                          decoration: BoxDecoration
+                          (
+                            border: Border.all(color: const Color.fromARGB(255, 232, 231, 231)),color: const Color.fromARGB(255, 238, 237, 237),
+                          ),
                           
                           child: Column
                           (
@@ -169,11 +175,6 @@ class _MyWidgetState extends State<OnlineCheckin> {
                               
                             ],
                           ),
-                  
-                          decoration: BoxDecoration
-                          (
-                            border: Border.all(color: const Color.fromARGB(255, 232, 231, 231)),color: const Color.fromARGB(255, 238, 237, 237),
-                          ),
                           
                           ),
           
@@ -181,6 +182,9 @@ class _MyWidgetState extends State<OnlineCheckin> {
                           Container(
                              width: 270,
                              height: 345,
+                          
+                          decoration: BoxDecoration(border: Border.all(color: const Color.fromARGB(255, 232, 231, 231)),color: const Color.fromARGB(255, 238, 237, 237),
+                          ),
                             child:Column(
                                children: [
                                  Padding(
@@ -306,15 +310,15 @@ class _MyWidgetState extends State<OnlineCheckin> {
                               ),
                                ],
                              ),
-                          
-                          decoration: BoxDecoration(border: Border.all(color: const Color.fromARGB(255, 232, 231, 231)),color: const Color.fromARGB(255, 238, 237, 237),
-                          ),
                           ),
           
                           const SizedBox(width: 25),
                            Container(
                               width: 270,
                               height: 345,
+                         
+                          decoration: BoxDecoration(border: Border.all(color: const Color.fromARGB(255, 232, 231, 231)),color: const Color.fromARGB(255, 238, 237, 237),
+                          ),
           
                             child:
                              Column(
@@ -427,15 +431,15 @@ class _MyWidgetState extends State<OnlineCheckin> {
           
                                ],
                              ),
-                         
-                          decoration: BoxDecoration(border: Border.all(color: const Color.fromARGB(255, 232, 231, 231)),color: const Color.fromARGB(255, 238, 237, 237),
-                          ),
                           ),
           
                           const SizedBox(width: 25),
                            Container(
                              width: 270,
                              height: 345,
+                          
+                          decoration: BoxDecoration(border: Border.all(color: const Color.fromARGB(255, 232, 231, 231)),color: const Color.fromARGB(255, 238, 237, 237),
+                          ),
           
                             child:
                              Column(
@@ -562,9 +566,6 @@ class _MyWidgetState extends State<OnlineCheckin> {
                               ),
                                ],
                              ),
-                          
-                          decoration: BoxDecoration(border: Border.all(color: const Color.fromARGB(255, 232, 231, 231)),color: const Color.fromARGB(255, 238, 237, 237),
-                          ),
                           ),
                         
                       

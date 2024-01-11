@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class BackPage extends StatefulWidget {
   const BackPage({super.key});
@@ -14,8 +15,8 @@ class _BackPageState extends State<BackPage> {
        Center(
               child: Container(
                 decoration: BoxDecoration(border: Border.all(color: Colors.grey),color: Colors.grey),
-                 width:120,
-                height: 50,
+                 width:120.w,
+                height: 50.sp,
                 child: Row(
                   children: [
                     const Icon(Icons.arrow_drop_up_outlined),
