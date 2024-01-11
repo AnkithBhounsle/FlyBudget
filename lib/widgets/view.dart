@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ViewPage extends StatefulWidget {
   const ViewPage({super.key});
@@ -27,8 +28,8 @@ class _ViewPageState extends State<ViewPage> {
         ),
         Container(
           padding: const EdgeInsets.only(top: 170,right: 20,left: 20),
-          width: 1500,
-          height: 220,
+          width: 1500.w,
+          height: 220.sp,
           color: const Color.fromARGB(255, 203, 19, 6),
          // alignment: Alignment.bottomLeft,
           child: 
@@ -50,7 +51,7 @@ class _ViewPageState extends State<ViewPage> {
               ),
               color: const Color.fromARGB(255, 234, 229, 229)),
           child: SizedBox(
-            height: 250,
+            height: 250.sp,
             child: Padding(
               padding: const EdgeInsets.only(left: 8.0, top: 60),
               child: Column(
@@ -63,7 +64,7 @@ class _ViewPageState extends State<ViewPage> {
                   Padding(
                     padding: const EdgeInsets.only(top:18.0),
                     child: SizedBox(
-                      height: 60,
+                      height: 60.sp,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -71,16 +72,16 @@ class _ViewPageState extends State<ViewPage> {
                             "I want to :",
                             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
-                          const SizedBox(
-                            width: 30,
+                          SizedBox(
+                            width: 30.w,
                           ),
                           Center(
                             child: Container(
                               decoration: BoxDecoration(
                                   border: Border.all(color: Colors.grey),borderRadius: BorderRadius.circular(5),
                                   color: Colors.grey),
-                              width: 165,
-                              height: 60,
+                              width: 165.w,
+                              height: 60.sp,
                               child: TextButton(
                                 onPressed: () {
                                   // Add your action for the first button here
@@ -92,15 +93,15 @@ class _ViewPageState extends State<ViewPage> {
                               ),
                             ),
                           ),
-                          const SizedBox(
-                            width: 30,
+                           SizedBox(
+                            width: 30.w,
                           ),
                           Container(
                             decoration: BoxDecoration(
                                 border: Border.all(color: Colors.grey),borderRadius: BorderRadius.circular(5),
                                 color: Colors.grey),
-                            width: 165,
-                            height: 70,
+                            width: 165.w,
+                            height: 70.sp,
                             child: TextButton(
                               onPressed: () {
                                 // Add your action for the first button here
@@ -111,15 +112,15 @@ class _ViewPageState extends State<ViewPage> {
                               ),
                             ),
                           ),
-                          const SizedBox(
-                            width: 30,
+                           SizedBox(
+                            width: 30.w,
                           ),
                           Container(
                             decoration: BoxDecoration(
                                 border: Border.all(color: Colors.grey),borderRadius: BorderRadius.circular(5),
                                 color: Colors.grey),
-                            width: 200,
-                            height: 70,
+                            width: 200.w,
+                            height: 70.sp,
                             child: TextButton(
                               onPressed: () {
                                 // Add your action for the first button here

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fly_jet/widgets/footer.dart';
 import 'package:fly_jet/widgets/header.dart';
 
@@ -17,8 +18,8 @@ class _AirLineCreditState extends State<AirLineCredit> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const Header(),
-            const SizedBox(height: 20,),
+             Header(),
+             SizedBox(height: 20.sp,),
             Padding(
               padding: const EdgeInsets.only(left: 20),
               child: Column(
@@ -26,14 +27,14 @@ class _AirLineCreditState extends State<AirLineCredit> {
                 
                 children: [
                   
-                  const SizedBox(height: 10),
+                  SizedBox(height: 10.sp),
                   const Row(
                     children: [
                       Text('Book Flight(s) using Airline Credit',
                       style:TextStyle(color: Colors.red,fontSize: 25,decoration: TextDecoration.none))
                     ],
                   ),
-                   const SizedBox(height: 20),
+                   SizedBox(height: 20.sp),
           
                  
                 
@@ -41,8 +42,8 @@ class _AirLineCreditState extends State<AirLineCredit> {
                   Row(
                     children: [
                       Container(
-                        height: 400,
-                        width: 300,              
+                        height: 400.sp,
+                        width: 300.w,              
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: const Color.fromARGB(255, 226, 225, 213)),
                         child: Column(
                           
@@ -57,7 +58,7 @@ class _AirLineCreditState extends State<AirLineCredit> {
                               ],
                             ),
           
-                             const SizedBox(height: 10),
+                             SizedBox(height: 10.sp),
           
           
                             Row(
@@ -65,8 +66,8 @@ class _AirLineCreditState extends State<AirLineCredit> {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 40),
                                   child: Container(
-                                    width: 220,
-                                    height: 40,
+                                    width: 220.w,
+                                    height: 40.sp,
                                     decoration: BoxDecoration(
                                       color: const Color.fromARGB(255, 255, 255, 255),
                                       border: Border.all(color: const Color.fromARGB(255, 0, 0, 0)),
@@ -78,7 +79,7 @@ class _AirLineCreditState extends State<AirLineCredit> {
                                 
                               ],
                             ),
-                             const SizedBox(height: 10),
+                              SizedBox(height: 10.sp),
           
                             const Padding(
                               padding: EdgeInsets.only(left: 40,top: 20),
@@ -89,15 +90,15 @@ class _AirLineCreditState extends State<AirLineCredit> {
                                 ],
                               ),
                             ),
-                            const SizedBox(height: 10),
+                             SizedBox(height: 10.sp),
           
                              Row(
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.only(left: 40),
                                   child: Container(
-                                    width: 220,
-                                    height: 40,
+                                    width: 220.w,
+                                    height: 40.sp,
                                     decoration: BoxDecoration(
                                       color: const Color.fromARGB(255, 255, 255, 255),
                                       border: Border.all(color: const Color.fromARGB(255, 0, 0, 0)),
@@ -109,7 +110,7 @@ class _AirLineCreditState extends State<AirLineCredit> {
                                 
                               ],
                             ),
-                             const SizedBox(height: 30),
+                              SizedBox(height: 30.sp),
           
                              const Row(
                               children: [
@@ -121,15 +122,15 @@ class _AirLineCreditState extends State<AirLineCredit> {
                               ],
                             ),
           
-                            const SizedBox(height: 10),
+                             SizedBox(height: 10.sp),
           
                              Row(
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.only(left: 40),
                                   child: Container(
-                                    width: 220,
-                                    height: 40,
+                                    width: 220.w,
+                                    height: 40.sp,
                                     decoration: BoxDecoration(
                                       color: const Color.fromARGB(255, 255, 255, 255),
                                       border: Border.all(color: const Color.fromARGB(255, 0, 0, 0)),
@@ -142,7 +143,7 @@ class _AirLineCreditState extends State<AirLineCredit> {
                               ],
                             ),
           
-                            const SizedBox(height: 20),
+                             SizedBox(height: 20.sp),
           
           
                             TextButton(
@@ -168,15 +169,15 @@ class _AirLineCreditState extends State<AirLineCredit> {
                         ),
                       ),
           
-                       const SizedBox(width: 10),
+                        SizedBox(width: 10.w),
           
                  
                         
                         Container(
-                        height: 400,
-                        width: 900,            
+                        height: 400.sp,
+                        width: 900.w,            
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: const Color.fromARGB(255, 226, 225, 213)),
-                        child: const Padding(
+                        child:  Padding(
                           padding: EdgeInsets.only(left: 30),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -194,42 +195,42 @@ class _AirLineCreditState extends State<AirLineCredit> {
                                 ),
                                 
                               ),
-                              SizedBox(height: 10),
+                              SizedBox(height: 10.sp),
                               Text(' As per the Airline Fare Rules:'),
-                               SizedBox(height: 20),
+                               SizedBox(height: 20.sp),
                              
                               Row(
                                 children: [
                                   Icon(Icons.circle,size: 5),
-                                  SizedBox(width: 10),
+                                  SizedBox(width: 10.w),
                                   Text(' Your booking request is subject to airline credit being available.'),
                                 ],
                               ),
-                               SizedBox(height: 13),
+                               SizedBox(height: 13.sp),
                               Row(
                                 children: [
                                   Icon(Icons.circle,size: 5),
-                                  SizedBox(width: 10),
+                                  SizedBox(width: 10.w),
                                   Text('Payment for any additional cost (on top of airline credit value) must be made before request is finalised.'),
                                 ],
                               ),
-                               SizedBox(height: 13),
+                               SizedBox(height: 13.sp),
                               Row(
                                 children: [
                                   Icon(Icons.circle,size: 5),
-                                  SizedBox(width: 10),
+                                  SizedBox(width: 10.w),
                                   Text('Your new fare must be of an equal or higher value than your original fare.'),
                                 ],
                               ),
-                               SizedBox(height: 13),
+                               SizedBox(height: 13.sp),
                               Row(
                                 children: [
                                   Icon(Icons.circle,size: 5),
-                                  SizedBox(width: 10),
+                                  SizedBox(width: 10.w),
                                   Text('The new flight must be with the same airline.'),
                                 ],
                               ),
-                               SizedBox(height: 13),
+                               SizedBox(height: 13.sp),
                               Row(
                                 children: [
                                   Icon(Icons.circle,size: 5),
@@ -237,27 +238,27 @@ class _AirLineCreditState extends State<AirLineCredit> {
                                   Text('Restrictions may apply to flight routes. In these instances, only city pairs mentioned on your original ticket can be booked.'),
                                 ],
                               ),
-                               SizedBox(height: 13),
+                               SizedBox(height: 13.sp),
                               Row(
                                 children: [
                                   Icon(Icons.circle,size: 5),
-                                  SizedBox(width: 10),
+                                  SizedBox(width: 10.w),
                                   Text('Some airlines may require your credit to be used in full at time of rebooking.'),
                                 ],
                               ),
-                               SizedBox(height: 13),
+                               SizedBox(height: 13.sp),
                               Row(
                                 children: [
                                   Icon(Icons.circle,size: 5),
-                                  SizedBox(width: 10),
+                                  SizedBox(width: 10.w),
                                   Text('Request is not valid for live flights that have not been cancelled.'),
                                 ],
                               ),
-                               SizedBox(height: 13),
+                               SizedBox(height: 13.sp),
                               Row(
                                 children: [
                                   Icon(Icons.circle,size: 5),
-                                  SizedBox(width: 10),
+                                  SizedBox(width: 10.w),
                                   Text('Click here if you have a live booking and wish to change the date or time.'),
                                 ],
                               ),
@@ -271,7 +272,7 @@ class _AirLineCreditState extends State<AirLineCredit> {
                 ],
               ),
             ),
-            const SizedBox(height: 20,),
+             SizedBox(height: 20.sp,),
             const Footer()
           ],
         ),
