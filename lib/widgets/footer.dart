@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fly_jet/common/colors.dart';
 import 'package:fly_jet/common/theme.dart';
 import 'package:fly_jet/widgets/change_mybooking.dart';
-import 'package:fly_jet/widgets/changebooking.dart';
 
 class Footer extends StatefulWidget {
   const Footer({super.key});
