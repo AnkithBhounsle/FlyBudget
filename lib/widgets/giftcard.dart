@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fly_jet/common/colors.dart';
+import 'package:fly_jet/common/theme.dart';
 
 class GiftCard extends StatefulWidget {
   const GiftCard({super.key});
@@ -11,361 +13,544 @@ class GiftCard extends StatefulWidget {
 class _GiftCardState extends State<GiftCard> {
   @override
   Widget build(BuildContext context) {
-    return 
-       Scaffold(
-         body: SingleChildScrollView(
-           child: Column(
-               children: [
-                    const Row(
-                      children: [
-                        Text(
-                          "Home",
-                          style: TextStyle(color: Colors.blue),
-                        ),
-                        Icon(Icons.arrow_right),
-                        Text("Support",
-                            style:
-                                TextStyle( color: Colors.blue)
-                                ),
-                                 Icon(Icons.arrow_right),
-                        Text(" Gift Cards",
-                            style:
-                                TextStyle(fontWeight: FontWeight.bold, color: Colors.blue)),
-                       ],
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+            Row(
+              children: [
+                Text(
+                  "Home",
+                  style: fbTextTheme().labelMedium?.copyWith(
+                        color: FBColors.black,
+                      ),
+                ),
+               Icon(Icons.arrow_right),
+                Text(
+                  "Support",
+                  style: fbTextTheme().labelMedium?.copyWith(
+                        color: FBColors.black,
+                      ),
+                ),
+                Icon(Icons.arrow_right),
+                Text(
+                  " Gift Cards",
+                  style: fbTextTheme().labelMedium?.copyWith(
+                        color: FBColors.black,
+                      ),
+                ),
+              ],
+            ),
+            Image.asset(
+              'assets/download (1).jpg',
+              height: 200.sp,
+              width: 300.w,
+            ),
+            Text(
+              'One gift card, thousands of adventures.',
+              style: fbTextTheme().displayMedium?.copyWith(
+                    color: FBColors.black,
+                  ),
+            ),
+             SizedBox(
+              height: 30.sp,
+            ),
+            Container(
+              width: 700.w,
+              height: 20.sp,
+              decoration: BoxDecoration(
+                color: FBColors.lightPrimary70.withOpacity(0.8),
+              ),
+              child: Text(
+                'NEW: Gift Now, Pay Later. Afterpay & PayPal Pay in 4 Now Available on Webjet eGift Cards. T&Cs apply^.',
+                style: fbTextTheme().labelLarge?.copyWith(
+                      color: FBColors.white,
                     ),
-            Image.asset('assets/download (1).jpg',height: 200, width: 300, ),
-         const Text('One gift card, thousands of adventures.',style: TextStyle(  fontWeight: FontWeight.bold,fontSize: 50),),
-                Padding(
-                 padding: const EdgeInsets.only(top:20.0),
-                 child: SizedBox(
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 20.sp),
+              child: SizedBox(
+                height: 60.sp,
+                width: 1000.w,
+                child: Text(
+                  "Whether you're treating a loved one or want to thank a customer, client or employee, the gift of travel makes the perfect present.Webjet Gift Cards can be redeemed on flights, holiday packages and hotel bookings**, and, best of all, offer a 3-year validity for ultimate booking flexibility.",
+                  style: fbTextTheme().displaySmall?.copyWith(
+                        color: FBColors.black,
+                      ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+           
+            SizedBox(
+              height: 30.sp,
+            ),
+            Row(
+              children: [
+                SizedBox(
+                  width: 300.w,
+                ),
+                Container(
                   height: 50.sp,
-                  width: 1000.w,
-                  child: const Text("Whether you're treating a loved one or want to thank a customer, client or employee, the gift of travel makes the perfect present.Webjet Gift Cards can be redeemed on flights, holiday packages and hotel bookings**, and, best of all, offer a 3-year validity for ultimate booking flexibility.",style: TextStyle( color: Colors.black,fontSize: 15),textAlign: TextAlign.center,)),
-               ),
-           Row(
-             children: [
-               Padding(
-                                    padding: const EdgeInsets.only(left: 500.0,top: 50),
-                                    child: Container(
-                                        height: 50.sp,
-                                         width: 300.w,
-                                         decoration: BoxDecoration(
-                                          border: Border.all(color: const Color.fromARGB(255, 72, 238, 77)), borderRadius: BorderRadius.circular(4),color: const Color.fromARGB(255, 55, 223, 61),
-                                       
-                                         ),
-                                          child: const Center(child: Text('Buy an eGift Card', style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)),
-                                       ),
-                                  ),
-                                   Padding(
-                                    padding: const EdgeInsets.only(left: 15.0,top: 50),
-                                    child: Container(
-                                        height: 50.sp,
-                                         width: 250.w,
-                                         decoration: BoxDecoration(
-                                          border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(4),color:Colors.grey,
-                                       
-                                         ),
-                                          child: const Center(child: Text('Check balance/Expiry', style: TextStyle(fontWeight: FontWeight.bold),)),
-                                       ),
-                                  ),
-             ],
-           ),
-               Row(
-            children: [
-           Padding(
-                padding:  const EdgeInsets.only(top:50.0),
-                child: Column(
-                  children: [
-                    const Text("Webjet eGift Cards",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold),),
-                      Padding(
-                       padding: const EdgeInsets.only(top:20.0),
-                       child: SizedBox(
-                        height: 60.sp,
-                        width: 500.w,
-                        child: const Text("Need your gift in a hurry? You can order a Webjet eGift Card online and receive it instantly via email in a print-friendly format.",style: TextStyle(fontSize: 16,),)),
-                     ),
-                   Padding(
-                    padding: const EdgeInsets.only(top:20.0),
-                    child: SizedBox(
-                      height: 60.sp,
-                      width: 500.w,
-                      child: const Text("Simply select the 'Purchase an eGift Card' button below, choose your eGift Card value from 20 to 5,000, and enter your recipient's details.",style: TextStyle(fontSize: 16),)),
+                  width: 300.w,
+                  decoration: BoxDecoration(
+                      border: Border.all(color: FBColors.green),
+                      borderRadius: BorderRadius.circular(4),
+                      color: FBColors.green),
+                  child: Center(
+                    child: Text(
+                      'Buy an eGift Card',
+                      style: fbTextTheme().labelLarge?.copyWith(
+                            color: FBColors.white,
+                          ),
+                    ),
                   ),
-                   Padding(
-                   padding: const EdgeInsets.only(top:20.0),
-                    child: SizedBox(
-                  height: 100.sp,
-                  width: 500.w,
-                  
-                      child: const Text("To redeem, enter the unique card number into the Gift Card field on the payment page when making a booking. Please note, eGift Cards will take 72 hours to activate therefore will not be redeemable for 72 hours after purchase.",style: TextStyle(fontSize: 16,),)),
-                  ),
-                  
-                    Padding(
-                                      padding: const EdgeInsets.only(left: 500.0,top: 50),
-                                      child: Container(
-                                          height: 50.sp,
-                                           width: 300.w,
-                                           decoration: BoxDecoration(
-                                            border: Border.all(color: const Color.fromARGB(255, 72, 238, 77)), borderRadius: BorderRadius.circular(4),color: const Color.fromARGB(255, 55, 223, 61),
-                                         
-                                           ),
-                                            child: const Center(child: Text('Add to Cart', style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)),
-                                         ),
-                                    ),  
-                                    ],
                 ),
-              ),
-               Image.asset('assets/egiftcard1.png',height: 500, width: 500,),
-                ],
-             ),
-           Row(
-            children: [
-             Padding(
-               padding: const EdgeInsets.only(left:200.0,bottom: 0),
-               child: Image.asset('assets/2469_thumb2.png',height: 500, width: 500,),
-             ),
-                 Padding(
-                padding: const EdgeInsets.only(top:40.0,left: 200),
-                child: Column(
-                  children: [
-       const Text("Physical Gift Card",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold),),
-                     Padding(
-                       padding: const EdgeInsets.only(top:20.0),
-                       child: SizedBox(
-                        height: 60.sp,
-                        width: 500.w,
-                        child: const Text("A Webjet Gift Card is perfect for any special occasion. You can purchase a physical Webjet \$100, \$200 or Variable gift card (\$20-\$500) from major retailers such as Coles, Woolworths, Australia Post, BIG W and more." ,style: TextStyle(fontSize: 16,),)),
-                     ),
-                  Padding(
-                    padding: const EdgeInsets.only(top:20.0),
-                    child: SizedBox(
-                      height: 60.sp,
-                      width: 500.w,
-                      child: const Text("Your lucky recipient can use their Webjet Gift Card on a flight, holiday package and hotel booking*. ",style: TextStyle(fontSize: 16),)),
+                SizedBox(width: 30.w),
+                Container(
+                  height: 50.sp,
+                  width: 250.w,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.grey),
+                    borderRadius: BorderRadius.circular(4),
+                    color: Colors.grey,
                   ),
-                  Padding(
-                   padding: const EdgeInsets.only(top:20.0),
-                    child: SizedBox(
-                  height: 100.sp,
-                  width: 500.w,
-                   child: const Text(" To redeem, enter the unique card number into the Gift Card field on the payment page when making a booking.",style: TextStyle(fontSize: 16,),)),
+                  child: Center(
+                    child: Text(
+                      'Check balance/Expiry',
+                      style: fbTextTheme().labelMedium?.copyWith(
+                            color: FBColors.white,
+                          ),
+                    ),
                   ),
-                   ],
                 ),
-              ),
-               ],
-             ),
-                 Padding(
-                 padding: const EdgeInsets.only(bottom:400.0),
-                 child: Row(
-                         children: [
-                           Padding(
-                  padding: const EdgeInsets.only(left: 200,bottom: 100),
-                  child: Column(
-                    children: [
-                      const Text("Corporate Gifting",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold),),
-                       Padding(
-                         padding: const EdgeInsets.only(top:20.0),
-                         child: SizedBox(
-                          height: 60.sp,
-                          width: 500.w,
-                          child: const Text(" Treat your customers or reward your employees with the gift of travel.",style: TextStyle(fontSize: 16,),)),
-                       ),
+              ],
+            ),
+            Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+             
+              children: [
+                SizedBox(width: 160.sp),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Webjet eGift Cards",
+                      style: fbTextTheme().headlineLarge?.copyWith(
+                            color: FBColors.black,
+                          ),
+                    ),
                     Padding(
-                      padding: const EdgeInsets.only(top:20.0),
+                      padding: EdgeInsets.only(top: 20.sp),
+                      child: SizedBox(
+                        height: 60.sp,
+                        width: 450.w,
+                        child: Text(
+                          "Need your gift in a hurry? You can order a Webjet eGift Card online and receive it instantly via email in a print-friendly format.",
+                          style: fbTextTheme().displaySmall?.copyWith(
+                                color: FBColors.black,
+                              ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.sp),
                       child: SizedBox(
                         height: 60.sp,
                         width: 500.w,
-                        child: const Text("To find out more or place an order, email us at giftcards@webjet.com.au. Our dedicated team will collate all of the required information and arrange for your eGift Cards to be delivered to your lucky recipients.",style: TextStyle(fontSize: 16),)),
-                    ),
-                    ],
-                  ),
-                           ),
-                 Padding(
-                 padding: const EdgeInsets.only(left:200.0), 
-                   child: Image.asset('assets/2470_thumb3.png', height: 500, width:500),
-                 ),
-             ],
-                            ),
-        ),
-        Padding(
-             padding: const EdgeInsets.only(left:150.0,bottom: 1000),
-             child: Row(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.black),
-              ),
-              width: 540.w,
-              height: 161.sp,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 20, top: 25),
-                child: Row(
-                  children: [
-                    Column(
-                      children: [
-                        const Text(
-                          'Subscribe to our Newsletters',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 25),
+                        child: Text(
+                          "Simply select the 'Purchase an eGift Card' button below, choose your eGift Card value from 20 to 5,000, and enter your recipient's details.",
+                          style: fbTextTheme().displaySmall?.copyWith(
+                                color: FBColors.black,
+                              ),
                         ),
-                        const Text('Be the first to hear about travel deals', style: TextStyle(color:Colors.grey ,fontSize: 15),),
-             Padding(
-          padding: const EdgeInsets.only(top: 25),
-          child: Row(
-            children: [
-              
-                 Container(
-                      height: 50.sp,
-                       width: 200.w,
-                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(3),color: Colors.white,
-                       ),
-                       child: const Padding(
-                         padding: EdgeInsets.only( left:8.0),
-                         child: TextField(
-                                              style: TextStyle(
-                                                  color: Color.fromARGB(255, 0, 0, 0)),
-                                              decoration: InputDecoration(
-                                                hintText: 'Enter Your Email Address',
-                                              border: InputBorder.none,
-                                              ),
-                                            ),
-                       ),
-                     ),
-                //
-                 Padding(
-                   padding: const EdgeInsets.only( left: 20.0),
-                   child: Container(
-                               decoration: BoxDecoration(
-                      border: Border.all(color:  Colors.green), borderRadius: BorderRadius.circular(3),
-                       color: Colors.green),
-                                         
-                                      width: 100.w,
-                                      height: 50.sp,
-                                      child: const Center(
-                                          child: Text(
-                                            "Subscribe",
-                                            style: TextStyle(color: Colors.white,fontSize: 15, fontFamily: 'Arial',),
-                                          ),
-                                        ),
-                               ),
-                 ),
-            ],
-          ),
-             ),
-             
-             
-                      ],
-                     
+                      ),
                     ),
-                    
                     Padding(
-                      padding: const EdgeInsets.only(left:18.0),
-                      child: Image.asset(
-                        'assets/newsletter-screenshot.png',
-                        height: 280,
-                        width: 150,
+                      padding: EdgeInsets.only(top: 20.sp),
+                      child: SizedBox(
+                        height: 100.sp,
+                        width: 500.w,
+                        child: Text(
+                          "To redeem, enter the unique card number into the Gift Card field on the payment page when making a booking. Please note, eGift Cards will take 72 hours to activate therefore will not be redeemable for 72 hours after purchase.",
+                          style: fbTextTheme().displaySmall?.copyWith(
+                                color: FBColors.black,
+                              ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      height: 50.sp,
+                      width: 200.w,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: FBColors.green),
+                          borderRadius: BorderRadius.circular(4),
+                          color: FBColors.green),
+                      child: Center(
+                        child: Text(
+                          'Add to Cart',
+                          style: fbTextTheme().labelLarge?.copyWith(
+                                color: FBColors.white,
+                              ),
+                        ),
                       ),
                     ),
                   ],
                 ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(60.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black),
+                SizedBox(width: 50.w),
+                Image.asset(
+                  'assets/egiftcard1.png',
+                  height: 500.sp,
+                  width: 450.w,
                 ),
-                width: 540,
-                height: 161,
-                child: Row(
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                SizedBox(width: 160.w),
+                Image.asset(
+                  'assets/2469_thumb2.png',
+                  height: 500.sp,
+                  width: 500.w,
+                ),
+                SizedBox(width: 50.w),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Padding(
-                         padding: EdgeInsets.only(left: 20, top: 25),
-               
+                    Text(
+                      "Physical Gift Card",
+                      style: fbTextTheme().headlineLarge?.copyWith(
+                            color: FBColors.black,
+                          ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: SizedBox(
+                          height: 60.sp,
+                          width: 450.w,
                           child: Text(
-                            'Download our free App',
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                            "A Webjet Gift Card is perfect for any special occasion. You can purchase a physical Webjet \$100, \$200 or Variable gift card (\$20-\$500) from major retailers such as Coles, Woolworths, Australia Post, BIG W and more.",
+                            style: fbTextTheme().displaySmall?.copyWith(
+                                  color: FBColors.black,
+                                ),
+                          )),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.sp),
+                      child: SizedBox(
+                          height: 60.sp,
+                          width: 450.w,
+                          child: Text(
+                            "Your lucky recipient can use their Webjet Gift Card on a flight, holiday package and hotel booking*. ",
+                            style: fbTextTheme().displaySmall?.copyWith(
+                                  color: FBColors.black,
+                                ),
+                          )),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.sp),
+                      child: SizedBox(
+                        height: 60.sp,
+                        width: 500.w,
+                        child: Text(
+                          " To redeem, enter the unique card number into the Gift Card field on the payment page when making a booking.",
+                          style: fbTextTheme().displaySmall?.copyWith(
+                                color: FBColors.black,
+                              ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.sp),
+                      child: Container(
+                        height: 50.sp,
+                        width: 200.w,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: FBColors.green),
+                            borderRadius: BorderRadius.circular(4),
+                            color: FBColors.green),
+                        child: Center(
+                          child: Text(
+                            'Order Online',
+                            style: fbTextTheme().labelLarge?.copyWith(
+                                  color: FBColors.white,
+                                ),
                           ),
                         ),
-                        const Text('Access to travel deals in the palm of your hand',style: TextStyle(color:Colors.grey ,fontSize: 15),),
-                    
-                   
-             
-                    Row(
-                      children: [
-                         Padding(
-         padding: const EdgeInsets.only( left: 10.0, top: 30),
-         child: Image.asset(
-                      'assets/app-store.png',
-                      height: 40,
-                      width: 100,
+                      ),
                     ),
-         ), 
-                        Padding(
-         padding: const EdgeInsets.only( left: 10.0, top: 30),
-         child: Image.asset(
-                          'assets/play-store.png',
-                          height: 40,
-                          width: 100,
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 20.sp,
+            ),
+            Row(
+              children: [
+                SizedBox(width: 160.w),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Corporate Gifting",
+                      style: fbTextTheme().headlineLarge?.copyWith(
+                            color: FBColors.black,
+                          ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.sp),
+                      child: SizedBox(
+                          height: 60.sp,
+                          width: 500.w,
+                          child: Text(
+                            " Treat your customers or reward your employees with the gift of travel.",
+                            style: fbTextTheme().displaySmall?.copyWith(
+                                  color: FBColors.black,
+                                ),
+                          )),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.sp),
+                      child: SizedBox(
+                          height: 60.sp,
+                          width: 500.w,
+                          child: Text(
+                            "To find out more or place an order, email us at giftcards@webjet.com.au. Our dedicated team will collate all of the required information and arrange for your eGift Cards to be delivered to your lucky recipients.",
+                            style: fbTextTheme().displaySmall?.copyWith(
+                                  color: FBColors.black,
+                                ),
+                          )),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20.sp),
+                      child: Container(
+                        height: 50.sp,
+                        width: 200.w,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: FBColors.green),
+                            borderRadius: BorderRadius.circular(4),
+                            color: FBColors.green),
+                        child: Center(
+                          child: Text(
+                            'Contact Us',
+                            style: fbTextTheme().labelLarge?.copyWith(
+                                  color: FBColors.white,
+                                ),
+                          ),
                         ),
-         ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(width: 50.w),
+                Image.asset('assets/2470_thumb3.png',
+                    height: 500.sp, width: 500.w),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                SizedBox(width: 50.w),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(color: FBColors.black),
+                  ),
+                  width: 520.w,
+                  height: 160.sp,
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 20.w, top: 25.sp),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Subscribe to our Newsletters',
+                              style: fbTextTheme().displaySmall?.copyWith(
+                                    color: FBColors.black,
+                                  ),
+                            ),
+                            Text(
+                              'Be the first to hear about travel deals',
+                              style: fbTextTheme().displaySmall?.copyWith(
+                                    color: FBColors.black,
+                                  ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(top: 25.sp),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 50.sp,
+                                    width: 200.w,
+                                    decoration: BoxDecoration(
+                                      border: Border.all(color: Colors.grey),
+                                      borderRadius: BorderRadius.circular(3),
+                                      color: FBColors.white,
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsets.only(left: 8.w),
+                                      child: TextField(
+                                        style: fbTextTheme()
+                                            .displaySmall
+                                            ?.copyWith(
+                                              color: FBColors.black,
+                                            ),
+                                        decoration: const InputDecoration(
+                                          hintText: 'Enter Your Email Address',
+                                          border: InputBorder.none,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  //
+                                  Padding(
+                                    padding: EdgeInsets.only(left: 20.w),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          border:
+                                              Border.all(color: FBColors.green),
+                                          borderRadius:
+                                              BorderRadius.circular(3),
+                                          color: FBColors.green),
+                                      width: 100.w,
+                                      height: 50.sp,
+                                      child: Center(
+                                        child: Text(
+                                          "Subscribe",
+                                          style: fbTextTheme()
+                                              .displaySmall
+                                              ?.copyWith(
+                                                color: FBColors.black,
+                                              ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 18.w),
+                          child: Image.asset(
+                            'assets/newsletter-screenshot.png',
+                            height: 300.sp,
+                            width: 150.w,
+                          ),
+                        ),
                       ],
                     ),
-             ],
-                    ),
-             Padding(
-             padding: const EdgeInsets.only(left:20.0),
-             child: Image.asset(
-                         'assets/app-screenshot.png',
-                         height: 250,
-                         width: 150,
-                       ),
-             ),
-                
-                  ],
-                  
-                  
+                  ),
                 ),
-                
-              ),
-               
-              
-            ),
-            
-          ],
-          
-             ),
-           ),
-               Padding(
-                 padding: const EdgeInsets.only(bottom:3000.0),
-                 child: Center(
-                         child: Container(
-                           decoration: BoxDecoration(border: Border.all(color: Colors.grey),color: Colors.grey),
-                            width:120,
-                           height: 50,
-                           child: Row(
-                             children: [
-                               const Icon(Icons.arrow_drop_up_outlined),
-                               TextButton(
-                                  onPressed: () {
-                                   // Add your action for the first button here
-                                 },
-                                  child: const Text( "Back to top", style: TextStyle(color: Colors.black),),
-                               ),
-                             ],
+                Padding(
+                  padding: EdgeInsets.all(60.sp),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(color: FBColors.black),
+                    ),
+                    width: 540.w,
+                    height: 161.sp,
+                    child: Row(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.w, top: 25.sp),
+                              child:  Text(
+                                'Download our free App',
+                                style: fbTextTheme().displaySmall?.copyWith(
+                                    color: FBColors.grey,
+                                  ),    ),
                             ),
+                            Text(
+                              'Access to travel deals in the palm of your hand',
+                              style: fbTextTheme().displaySmall?.copyWith(
+                                    color: FBColors.grey,
+                                  ),
+                              //  TextStyle(color: Colors.grey, fontSize: 15),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Padding(
+                                  padding:
+                                      EdgeInsets.only(left: 10.w, top: 30.sp),
+                                  child: Image.asset(
+                                    'assets/app-store.png',
+                                    height: 40.sp,
+                                    width: 100.w,
+                                  ),
+                                ),
+                                Padding(
+                                  padding:
+                                      EdgeInsets.only(left: 10.w, top: 30.sp),
+                                  child: Image.asset(
+                                    'assets/play-store.png',
+                                    height: 40.sp,
+                                    width: 100.w,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 20.w),
+                          child: Image.asset(
+                            'assets/app-screenshot.png',
+                            height: 280.sp,
+                            width: 150.w,
                           ),
-                            ),
-               ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 3000.sp),
+              child: Center(
+                child: Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(color: FBColors.grey),
+                      color: FBColors.grey),
+                  width: 150.w,
+                  height: 50.sp,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      const Icon(Icons.arrow_drop_up_outlined),
+                      TextButton(
+                        onPressed: () {
+                         
+                        },
+                        child: Text(
+                          "Back to top",
+                          style: fbTextTheme().displaySmall?.copyWith(
+                                color: FBColors.black,
+                              ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ],
-           ),       
-           ),
-       );  
-     }
+        ),
+      ),
+    );
+  }
 }
