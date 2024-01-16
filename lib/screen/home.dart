@@ -6,6 +6,7 @@ import 'package:fly_jet/widgets/flights.dart';
 import 'package:fly_jet/widgets/footer.dart';
 import 'package:fly_jet/widgets/header.dart';
 import 'package:fly_jet/widgets/main_menu.dart';
+import 'package:fly_jet/widgets/online_checkin.dart';
 import 'package:fly_jet/widgets/searchplan.dart';
 
 class HomePage extends StatefulWidget {
@@ -35,11 +36,14 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Header(),
-            MainMenuBar(),
-            SearchPlan(),
-            FlightsInHome(),
+            // Header(),
+            // MainMenuBar(),
+            // SearchPlan(),
+            // FlightsInHome(),
             Footer(),
+            
+            
+           
           ],
         ),
       ),
