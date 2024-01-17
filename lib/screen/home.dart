@@ -11,9 +11,7 @@ import 'package:fly_jet/widgets/internationaldeals.dart';
 import 'package:fly_jet/widgets/list.dart';
 import 'package:fly_jet/widgets/listview.dart';
 import 'package:fly_jet/widgets/main_menu.dart';
-import 'package:fly_jet/widgets/online_checkin.dart';
 import 'package:fly_jet/widgets/register1.dart';
-import 'package:fly_jet/widgets/searchplan.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
