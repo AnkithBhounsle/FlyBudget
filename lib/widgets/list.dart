@@ -59,7 +59,7 @@ class _ListPageState extends State<ListPage> {
                             // _listItems[id].title,
                             list["title"],
                             style: fbTextTheme().displaySmall?.copyWith(
-                                color: FBColors. lightblack,
+                                color: FBColors. dark,
                              
                             ),
                           ),
@@ -140,7 +140,7 @@ class _ListPageState extends State<ListPage> {
                   child:  Text(
                     "Back to top",
                        style: fbTextTheme().displaySmall?.copyWith(
-                                color: FBColors. lightblack,
+                                color: FBColors. dark,
                               ), 
                    
                   ),
