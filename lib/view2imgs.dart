@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class View2Img extends StatefulWidget {
   const View2Img({super.key});
@@ -11,7 +12,7 @@ class _View2ImgState extends State<View2Img> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left:150.0),
+      padding:  EdgeInsets.only(left:150.w),
       child: Row(
         children: [
           Container(

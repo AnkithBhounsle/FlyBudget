@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'package:fly_jet/common/device.dart';
 import 'package:fly_jet/common/theme.dart';
+import 'package:fly_jet/screen/view_screen.dart';
+import 'package:fly_jet/widgets/flights.dart';
+import 'package:fly_jet/widgets/footer.dart';
+import 'package:fly_jet/widgets/giftcard.dart';
 import 'package:fly_jet/widgets/header.dart';
+import 'package:fly_jet/widgets/internationaldeals.dart';
+import 'package:fly_jet/widgets/list.dart';
+import 'package:fly_jet/widgets/listview.dart';
 import 'package:fly_jet/widgets/main_menu.dart';
 import 'package:fly_jet/widgets/register1.dart';
 
@@ -35,8 +42,10 @@ class _HomePageState extends State<HomePage> {
           children: [
             Header(),
               MainMenuBar(),
-            Register1Page(),
-         
+            //Register1Page(),
+            ViewScreen(),
+           // ListPage(),
+         //Listview(),
            // SearchPlan(),
       //  GiftCard(),
           //  InternationalDeals(),

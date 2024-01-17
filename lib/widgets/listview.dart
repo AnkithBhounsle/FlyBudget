@@ -3,6 +3,9 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fly_jet/common/colors.dart';
+import 'package:fly_jet/common/theme.dart';
 
 class Listview extends StatefulWidget {
   const Listview({super.key});
@@ -32,70 +35,89 @@ class _ListviewState extends State<Listview> {
     return Column(
        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-            ListView.builder(
-    shrinkWrap :true,
-    itemCount:_listviewItems.length,
-    itemBuilder: (BuildContext context, int id) {
-    var listview = _listviewItems[id];
-    bool isExpanded = listview["isExpanded"] ?? false;
-    return Column(
-                children: [
-                  Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(
-                            // _listItems[id].title,
-                            listview["title"],
-                            style: const TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
-                            ),
-                          ),
-                          InkWell(
-                            onTap: () {
-                              setState(() {
-                                listview["isExpanded"] = !isExpanded;
-                              });
-                            },
-                            child: isExpanded
-                                ? const Icon(Icons.arrow_drop_down)
-                                : const Icon(Icons.arrow_right),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 20),
-                      if (isExpanded)...{
-                        Column(
+            Padding(
+              padding:  EdgeInsets.only(left:100.w),
+              child: Text("Most questions can be answered by browsing our FAQs:",
+                      
+                                  style: fbTextTheme(). displaySmall?.copyWith(
+                                color: FBColors.lightblack,
+                                fontSize: 18
+                              ),
+                              
+              ),
+            ),
+            SizedBox(
+              height: 20.sp,
+            ),
+            Padding(
+              padding:  EdgeInsets.only(left:100.w,right:100.sp),
+              child: ListView.builder(
+                  shrinkWrap :true,
+                  itemCount:_listviewItems.length,
+                  itemBuilder: (BuildContext context, int id) {
+                  var listview = _listviewItems[id];
+                  bool isExpanded = listview["isExpanded"] ?? false;
+                  return Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                      
+                    Column(
+                         mainAxisAlignment: MainAxisAlignment.start,
+                    
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                           // Text(list["description"]),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 60.0,top:20),
-                              child: Text(listview["description"]),
+                           
+                            Text(
+                                 listview["title"],
+                                style: fbTextTheme(). labelLarge?.copyWith(
+                              color: FBColors.lightblack,
                             ),
-
+                              ),
+                            InkWell(
+                              onTap: () {
+                                setState(() {
+                                  listview["isExpanded"] = !isExpanded;
+                                }
+                                );
+                              },
+                              child: isExpanded
+                                  ? const Icon(Icons.arrow_drop_down)
+                                  : const Icon(Icons.arrow_right),
+                            ),
                           ],
                         ),
-                      },
-                    ],
-                  ),
-                  const Divider(
-                    color: Colors.black,
-                    thickness: 2,
-                  )
-                ],
-              );
-       }     ),
+                         SizedBox(
+                          height: 20.sp
+                          ),
+                        if (isExpanded)...{
+                          Column(
+                            children: [
+                             Padding(
+                                padding:  EdgeInsets.only(left: 60.w,top:20.sp),
+                                child: Text(listview["description"]),
+                              ),
+                              ],
+                          ),
+                        },
+                      ],
+                    ),
+                    const Divider(
+                      color: FBColors.lightGrey,
+                      thickness: 1,
+                    )
+                  ],
+                );
+                     }  
+                        ),
+            ),
+          
        
-        const Divider(
-          color: Colors.grey,
-          thickness: 1,
-        ),        
- ],
-);                
+         
+     ],
+    );                
  }
   }
 
