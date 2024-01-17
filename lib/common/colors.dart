@@ -87,5 +87,9 @@ class FBColors {
   static const Color lightO = Color(0xffFFF3CD);
   static const Color dark = Color(0xff646464);
   static const Color lightP = Color(0xffF6F2F6);
-  static const Color lightG = Color(0xffEBEBEB);
+  static const Color lightblack = Color(0xff646464);
+  static const Color Red = Color(0xffDC140A);
+  static const Color lightgrey = Color(0xffDFDFDF);
+  static const Color darkgrey = Color(0xff333333);
+
 }

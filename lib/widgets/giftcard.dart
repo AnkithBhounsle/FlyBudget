@@ -300,10 +300,7 @@ class _GiftCardState extends State<GiftCard> {
                   children: [
                     Text(
                       "Corporate Gifting",
-                      style: fbTextTheme().headlineLarge?.copyWith(
-                            color: FBColors.black,
-                          ),
-                    ),
+                     ),
                     Padding(
                       padding: EdgeInsets.only(top: 20.sp),
                       child: SizedBox(

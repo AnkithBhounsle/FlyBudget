@@ -114,7 +114,7 @@ class _ChangeBookingState extends State<ChangeBooking1> {
                     width: 1000.w,
                     height: 1070.h,
                     decoration: const BoxDecoration(
-                      color: FBColors.lightG,
+                      color: FBColors.lightP,
                     ),
                     child: Column(
                       children: [

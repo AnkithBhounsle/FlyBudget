@@ -14,7 +14,9 @@ class _BackPageState extends State<BackPage> {
     return 
        Center(
               child: Container(
-                decoration: BoxDecoration(border: Border.all(color: Colors.grey),color: Colors.grey),
+                decoration: BoxDecoration(border: Border.all(
+                  color: Colors.grey),
+                  color: Colors.grey),
                  width:120.w,
                 height: 50.sp,
                 child: Row(
