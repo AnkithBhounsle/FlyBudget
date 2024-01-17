@@ -2,9 +2,18 @@ import 'package:flutter/material.dart';
 
 import 'package:fly_jet/common/device.dart';
 import 'package:fly_jet/common/theme.dart';
+import 'package:fly_jet/screen/cancel_booking.dart';
+import 'package:fly_jet/widgets/change_mybooking.dart';
+import 'package:fly_jet/widgets/changebooking.dart';
+import 'package:fly_jet/widgets/flights.dart';
+import 'package:fly_jet/widgets/footer.dart';
+import 'package:fly_jet/widgets/giftcard.dart';
 import 'package:fly_jet/widgets/header.dart';
+import 'package:fly_jet/widgets/internationaldeals.dart';
 import 'package:fly_jet/widgets/main_menu.dart';
+import 'package:fly_jet/widgets/online_checkin.dart';
 import 'package:fly_jet/widgets/register1.dart';
+import 'package:fly_jet/widgets/searchplan.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -33,17 +42,16 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Header(),
-              MainMenuBar(),
-            Register1Page(),
-         
-           // SearchPlan(),
-      //  GiftCard(),
-          //  InternationalDeals(),
-          //  
-           // FlightsInHome(),
-          //  Footer(),
-         //  OnlineCheckin(),
+            // Header(),
+            // MainMenuBar(),
+            // SearchPlan(),
+            
+            //  InternationalDeals(),
+            
+            // FlightsInHome(),
+            Footer(),
+           //CancelBooking()
+           
           ],
         ),
       ),

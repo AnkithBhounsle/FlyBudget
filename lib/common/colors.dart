@@ -83,4 +83,9 @@ class FBColors {
 
   static const Color divider1 = Color(0xffC9C5CA);
   static const Color cement = Color(0xff897972);
+
+  static const Color lightO = Color(0xffFFF3CD);
+  static const Color dark = Color(0xff646464);
+  static const Color lightP = Color(0xffF6F2F6);
+  static const Color lightG = Color(0xffEBEBEB);
 }
