@@ -37,12 +37,12 @@ class _InternationalDealsState extends State<InternationalDeals> {
                   width: 150.w,
                   decoration: BoxDecoration(
                     border: Border.all(
-                      color: const Color.fromARGB(255, 59, 242, 65),
+                      color:  Color.fromARGB(255, 59, 242, 65),
                     ),
-                    color: const Color.fromARGB(255, 59, 242, 65),
+                    color:  Color.fromARGB(255, 59, 242, 65),
                     borderRadius: BorderRadius.circular(3),
                   ),
-                  child: const Center(
+                  child:  Center(
                       child: Text("Search all flights",
                           style: TextStyle(
                             fontSize: 15,
@@ -61,7 +61,7 @@ class _InternationalDealsState extends State<InternationalDeals> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(
+                 Text(
                   "Departing from",
                   style: TextStyle(fontSize: 20),
                 ),
@@ -175,31 +175,41 @@ class _InternationalDealsState extends State<InternationalDeals> {
                         ),
                         SizedBox(
                           height: 40.sp,
-                          child: const Text(
+                          child:  Text(
                             "HONOLULU",
-                            style: TextStyle(
-                                fontSize: 25,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white),
+                            style: 
+                   fbTextTheme().displayMedium?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                         SizedBox(
                           height: 40.sp,
-                          child: const Text(
+                          child:  Text(
                             "Return flight from",
-                            style: TextStyle(color: Colors.white, fontSize: 18),
+                            style: 
+                   fbTextTheme().displaySmall?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 15,
+                             
+                            ),
                           ),
                         ),
-                        const Text(
+                        Text(
                           "\$1584*",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 35,
-                              fontWeight: FontWeight.bold),
-                        ),
+                          style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 35, fontWeight: FontWeight.bold,
+                        )),
                       ],
                     ),
-                  ),
+              ]),
                 ],
               ),
               SizedBox(
@@ -223,28 +233,35 @@ class _InternationalDealsState extends State<InternationalDeals> {
                           ),
                           Positioned(
                             left: 70.w,
-                            child: const Column(
+                            child:  Column(
                               children: [
                                 Text(
                                   "QUEENSTOWN",
-                                  style: TextStyle(
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white),
+                                   style: 
+                   fbTextTheme().displayMedium?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),
                                 ),
                                 Text(
                                   "One way from",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white),
+                                   style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 15,
+                              ),
                                 ),
                                 Text(
                                   "\$786*",
-                                  style: TextStyle(
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white),
+                                   style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 35, fontWeight: FontWeight.bold,
+                        )
                                 ),
                               ],
                             ),
@@ -267,29 +284,34 @@ class _InternationalDealsState extends State<InternationalDeals> {
                           ),
                           Positioned(
                               left: 80.w,
-                            child: const Column(
+                            child:  Column(
                               children: [
                                 Text(
                                   "PHUKET",
-                                  style: TextStyle(
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white),
+                                  style: 
+                   fbTextTheme().displayMedium?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),
                                 ),
                                 Text(
                                   "One way from",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white),
+                                  style: 
+                   fbTextTheme().displaySmall?.copyWith(
+                color:Color(0xffFFFFFF),
+                  fontSize: 15,
+                                         ),
                                 ),
                                 Text(
                                   "\$786*",
-                                  style: TextStyle(
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white),
-                                ),
+                                  style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 35, fontWeight: FontWeight.bold,
+                        )),
                               ],
                             ),
                           ),
@@ -314,31 +336,34 @@ class _InternationalDealsState extends State<InternationalDeals> {
                                   ),
                           Positioned(
                               left: 70.w,
-                            child: const Column(
+                            child:  Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
                                   "AUCKLAND",
-                                  style: TextStyle(
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white),
-                                ),
+                                   style: 
+                   fbTextTheme().displayMedium?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            )),
                                 Text(
                                   "One way from",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
+                                  style: 
+                   fbTextTheme().displaySmall?.copyWith(
+                color:Color(0xffFFFFFF),
+                              fontSize: 15,
+                            ),
                                 ),
                                 Text(
                                   "\$786*",
-                                  style: TextStyle(
-                                    fontSize: 30,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
+                                  style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 35, fontWeight: FontWeight.bold,
+                        )
                                 ),
                               ],
                             ),
@@ -361,31 +386,36 @@ class _InternationalDealsState extends State<InternationalDeals> {
                           ),
                           Positioned(
                              left:60.w,
-                            child: const Column(
+                            child: Column(
                               children: [
                                 Text(
                                   "BALI",
-                                  style: TextStyle(
-                                    fontSize: 30,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
+                                 style: 
+                   fbTextTheme().displayMedium?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),
                                 ),
                                 Text(
                                   "One way from",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
+                                  style: 
+                   fbTextTheme().displaySmall?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 15,
+                             
+                            ),
                                 ),
                                 Text(
                                   "\$786*",
-                                  style: TextStyle(
-                                    fontSize: 30,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
+                                   style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 35, fontWeight: FontWeight.bold,
+                        )
                                 ),
                               ],
                             ),
@@ -396,8 +426,7 @@ class _InternationalDealsState extends State<InternationalDeals> {
                   ),
                 ],
               ),
-            ],
-          ),
+            
           SizedBox(
             width: 20.w,
             height:20.h,
@@ -417,32 +446,37 @@ class _InternationalDealsState extends State<InternationalDeals> {
                   ),
                   Positioned(
                     left:90.w,
-                    child: const Column(
+                    child:Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           "MANILA",
-                          style: TextStyle(
-                              fontSize: 30,
+                        style: 
+                   fbTextTheme().displayMedium?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 24,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white),
+                            ),
                         ),
                         Text(
                           "One way from",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
+                           style: 
+                   fbTextTheme().displaySmall?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 15,
+                             
+                            ),),
                         Text(
                           "\$786*",
-                          style: TextStyle(
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
+                           style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 35, fontWeight: FontWeight.bold,
+                        )
                         ),
                       ],
                     ),
@@ -464,29 +498,35 @@ class _InternationalDealsState extends State<InternationalDeals> {
                   ),
                   Positioned(
                      left:90.w,
-                    child: const Column(
+                    child: Column(
                       children: [
                         Text(
                           "Russia",
-                          style: TextStyle(
-                              fontSize: 30,
+                         style: 
+                   fbTextTheme().displayMedium?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 24,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white),
+                            ),
                         ),
                         Text(
                           "One way from",
-                          style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white),
-                        ),
+                           style: 
+                   fbTextTheme().displaySmall?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 15,
+                             
+                            )),
                         Text(
                           "\$786*",
-                          style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white),
-                        ),
+                           style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 35, fontWeight: FontWeight.bold,
+                        )),
                       ],
                     ),
                   ),
@@ -508,28 +548,35 @@ class _InternationalDealsState extends State<InternationalDeals> {
                   ),
                   Positioned(
                      left:70.w,
-                    child: const Column(
+                    child:  Column(
                       children: [
                         Text(
                           'LOS ANGELES',
-                          style: TextStyle(
-                              fontSize: 30,
+                             style: 
+                   fbTextTheme().displayMedium?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 24,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white),
+                            ),
                         ),
                         Text(
                           'One way from',
-                          style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white),
-                        ),
+                           style: 
+                   fbTextTheme().displaySmall?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 15,
+                             
+                            )),
                         Text(
                           '\$849*',
-                          style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white),
+                           style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color:Color(0xffFFFFFF),
+                 
+                              fontSize: 35, fontWeight: FontWeight.bold,
+                        )
                         ),
                       ],
                     ),
@@ -538,8 +585,8 @@ class _InternationalDealsState extends State<InternationalDeals> {
               ),
             ],
           ),
-        ],
-      ),
-    );
+      
+      
+   ]) );
   }
 }

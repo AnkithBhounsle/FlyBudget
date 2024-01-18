@@ -3,6 +3,10 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fly_jet/common/colors.dart';
+
+import '../common/theme.dart';
 
 class Listview extends StatefulWidget {
   const Listview({super.key});
@@ -33,7 +37,7 @@ class _ListviewState extends State<Listview> {
        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
             Padding(
-              padding:  EdgeInsets.only(left:100.w),
+              padding:  EdgeInsets.only(left:100),
               child: Text("Most questions can be answered by browsing our FAQs:",
                       
                                   style: fbTextTheme(). displaySmall?.copyWith(
@@ -44,7 +48,7 @@ class _ListviewState extends State<Listview> {
               ),
             ),
             SizedBox(
-              height: 20.sp,
+              height: 20.h,
             ),
             Padding(
               padding:  EdgeInsets.only(left:100.w,right:100.sp),
@@ -85,13 +89,13 @@ class _ListviewState extends State<Listview> {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 20),
+                       SizedBox(height: 20),
                       if (isExpanded)...{
                         Column(
                           children: [
                            // Text(list["description"]),
                             Padding(
-                              padding: const EdgeInsets.only(left: 60.0,top:20),
+                              padding:  EdgeInsets.only(left: 60.0,top:20),
                               child: Text(listview["description"]),
                             ),
 
@@ -100,7 +104,7 @@ class _ListviewState extends State<Listview> {
                       },
                     ],
                   ),
-                  const Divider(
+                   Divider(
                     color: Colors.black,
                     thickness: 2,
                   )
@@ -109,7 +113,7 @@ class _ListviewState extends State<Listview> {
        }     ),
        
          
-     ],
+    )],
     );                
  }
   }
