@@ -141,12 +141,12 @@ class _HeaderState extends State<Header> {
                   } else if (choice == 'gift_card_balance') {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => const GiftCard()));
                   } else if (choice == 'faqs') {
-                     Navigator.push(context, MaterialPageRoute(builder: (context) => const ViewDescriptionPage()));
+                     Navigator.push(context, MaterialPageRoute(builder: (context) => const ViewScreen()));
                     // Implement FAQs logic
                   } else if (choice == 'contact_us') {
                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ViewScreen()));
                   } else if (choice == 'feedback') {
-                    // Implement feedback logic
+                   Navigator.push(context, MaterialPageRoute(builder: (context) => const ViewScreen()));  // Implement feedback logic
                   }
                 },
               ),
