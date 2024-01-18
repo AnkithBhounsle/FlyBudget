@@ -20,27 +20,29 @@ class ViewScreen extends StatefulWidget {
 class _ViewScreenState extends State<ViewScreen> {
   @override
   Widget build(BuildContext context) {
-    return   SingleChildScrollView(
-      child: Container(
-        width: 1600.w,
-        decoration: BoxDecoration(
-          border: Border.all(color: FBColors.white),
-          color: FBColors.white
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-          
-         // SizedBox(height: 25,),
-         
-          //   ViewPage(),
-          // SizedBox(height: 25,),
-         //   Listview(),
-          //  SizedBox(height: 25,),
-         //  ViewDescriptionPage(),
+    return  Scaffold(
+      body: SingleChildScrollView(
+        child: Container(
+          width: 1600.w,
+          decoration: BoxDecoration(
+            border: Border.all(color: FBColors.white),
+            color: FBColors.white
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+            
            SizedBox(height: 25,),
-           View2Img(),            
-          ],
+           
+            ViewPage(),
+           SizedBox(height: 25,),
+          Listview(),
+            SizedBox(height: 65,),
+            ViewDescriptionPage(),
+             SizedBox(height: 65,),
+          View2Img(),            
+            ],
+          ),
         ),
       ),
     );
