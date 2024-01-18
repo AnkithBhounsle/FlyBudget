@@ -12,16 +12,19 @@ class InternationalScreen extends StatefulWidget {
 class _InternationalScreenState extends State<InternationalScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            InternationalDeals(),
-            Destination(),
-      
-          ],
-        ),
-      ),
-    );
+    return  
+       Scaffold(
+         body: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              InternationalDeals(),
+              Destination(),
+             
+            ],
+          ),
+             ),
+       );
+  
   }
 }
