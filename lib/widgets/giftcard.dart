@@ -23,21 +23,21 @@ class _GiftCardState extends State<GiftCard> {
                 Text(
                   "Home",
                   style: fbTextTheme().labelMedium?.copyWith(
-                        color: FBColors.black,
+                        color: FBColors.blue,
                       ),
                 ),
                Icon(Icons.arrow_right),
                 Text(
                   "Support",
                   style: fbTextTheme().labelMedium?.copyWith(
-                        color: FBColors.black,
+                        color: FBColors.blue,
                       ),
                 ),
                 Icon(Icons.arrow_right),
                 Text(
                   " Gift Cards",
                   style: fbTextTheme().labelMedium?.copyWith(
-                        color: FBColors.black,
+                        color: FBColors.blue,
                       ),
                 ),
               ],
@@ -50,7 +50,7 @@ class _GiftCardState extends State<GiftCard> {
             Text(
               'One gift card, thousands of adventures.',
               style: fbTextTheme().displayMedium?.copyWith(
-                    color: FBColors.black,
+                    color: FBColors.lightblack,
                   ),
             ),
              SizedBox(
@@ -65,7 +65,7 @@ class _GiftCardState extends State<GiftCard> {
               child: Text(
                 'NEW: Gift Now, Pay Later. Afterpay & PayPal Pay in 4 Now Available on Webjet eGift Cards. T&Cs apply^.',
                 style: fbTextTheme().labelLarge?.copyWith(
-                      color: FBColors.white,
+                      color: FBColors.lightblack,
                     ),
               ),
             ),
@@ -77,7 +77,7 @@ class _GiftCardState extends State<GiftCard> {
                 child: Text(
                   "Whether you're treating a loved one or want to thank a customer, client or employee, the gift of travel makes the perfect present.Webjet Gift Cards can be redeemed on flights, holiday packages and hotel bookings**, and, best of all, offer a 3-year validity for ultimate booking flexibility.",
                   style: fbTextTheme().displaySmall?.copyWith(
-                        color: FBColors.black,
+                        color: FBColors.darkgrey,
                       ),
                   textAlign: TextAlign.center,
                 ),
@@ -96,14 +96,14 @@ class _GiftCardState extends State<GiftCard> {
                   height: 50.sp,
                   width: 300.w,
                   decoration: BoxDecoration(
-                      border: Border.all(color: FBColors.green),
+                      border: Border.all(color: FBColors. parrotgreen),
                       borderRadius: BorderRadius.circular(4),
-                      color: FBColors.green),
+                      color: FBColors. parrotgreen),
                   child: Center(
                     child: Text(
                       'Buy an eGift Card',
                       style: fbTextTheme().labelLarge?.copyWith(
-                            color: FBColors.white,
+                            color: FBColors. offwhite,
                           ),
                     ),
                   ),
@@ -113,15 +113,15 @@ class _GiftCardState extends State<GiftCard> {
                   height: 50.sp,
                   width: 250.w,
                   decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey),
+                    border: Border.all(color: FBColors.lightgrey),
                     borderRadius: BorderRadius.circular(4),
-                    color: Colors.grey,
+                    color: FBColors.lightgrey,
                   ),
                   child: Center(
                     child: Text(
                       'Check balance/Expiry',
                       style: fbTextTheme().labelMedium?.copyWith(
-                            color: FBColors.white,
+                            color: FBColors.lightblack,
                           ),
                     ),
                   ),
@@ -140,7 +140,7 @@ class _GiftCardState extends State<GiftCard> {
                     Text(
                       "Webjet eGift Cards",
                       style: fbTextTheme().headlineLarge?.copyWith(
-                            color: FBColors.black,
+                            color: FBColors.darkgrey,
                           ),
                     ),
                     Padding(
@@ -151,7 +151,7 @@ class _GiftCardState extends State<GiftCard> {
                         child: Text(
                           "Need your gift in a hurry? You can order a Webjet eGift Card online and receive it instantly via email in a print-friendly format.",
                           style: fbTextTheme().displaySmall?.copyWith(
-                                color: FBColors.black,
+                                color: FBColors.lightblack,
                               ),
                         ),
                       ),
@@ -164,7 +164,7 @@ class _GiftCardState extends State<GiftCard> {
                         child: Text(
                           "Simply select the 'Purchase an eGift Card' button below, choose your eGift Card value from 20 to 5,000, and enter your recipient's details.",
                           style: fbTextTheme().displaySmall?.copyWith(
-                                color: FBColors.black,
+                                color: FBColors.lightblack,
                               ),
                         ),
                       ),
@@ -177,23 +177,23 @@ class _GiftCardState extends State<GiftCard> {
                         child: Text(
                           "To redeem, enter the unique card number into the Gift Card field on the payment page when making a booking. Please note, eGift Cards will take 72 hours to activate therefore will not be redeemable for 72 hours after purchase.",
                           style: fbTextTheme().displaySmall?.copyWith(
-                                color: FBColors.black,
+                                color: FBColors.lightblack,
                               ),
                         ),
                       ),
                     ),
                     Container(
                       height: 50.sp,
-                      width: 200.w,
+                      width: 150.w,
                       decoration: BoxDecoration(
-                          border: Border.all(color: FBColors.green),
+                          border: Border.all(color: FBColors.parrotgreen),
                           borderRadius: BorderRadius.circular(4),
-                          color: FBColors.green),
+                          color: FBColors.parrotgreen),
                       child: Center(
                         child: Text(
                           'Add to Cart',
                           style: fbTextTheme().labelLarge?.copyWith(
-                                color: FBColors.white,
+                                color: FBColors.offwhite,
                               ),
                         ),
                       ),
@@ -225,7 +225,7 @@ class _GiftCardState extends State<GiftCard> {
                     Text(
                       "Physical Gift Card",
                       style: fbTextTheme().headlineLarge?.copyWith(
-                            color: FBColors.black,
+                            color: FBColors.darkgrey,
                           ),
                     ),
                     Padding(
@@ -236,7 +236,7 @@ class _GiftCardState extends State<GiftCard> {
                           child: Text(
                             "A Webjet Gift Card is perfect for any special occasion. You can purchase a physical Webjet \$100, \$200 or Variable gift card (\$20-\$500) from major retailers such as Coles, Woolworths, Australia Post, BIG W and more.",
                             style: fbTextTheme().displaySmall?.copyWith(
-                                  color: FBColors.black,
+                                  color: FBColors.lightblack,
                                 ),
                           )),
                     ),
@@ -248,7 +248,7 @@ class _GiftCardState extends State<GiftCard> {
                           child: Text(
                             "Your lucky recipient can use their Webjet Gift Card on a flight, holiday package and hotel booking*. ",
                             style: fbTextTheme().displaySmall?.copyWith(
-                                  color: FBColors.black,
+                                  color: FBColors.lightblack,
                                 ),
                           )),
                     ),
@@ -260,7 +260,7 @@ class _GiftCardState extends State<GiftCard> {
                         child: Text(
                           " To redeem, enter the unique card number into the Gift Card field on the payment page when making a booking.",
                           style: fbTextTheme().displaySmall?.copyWith(
-                                color: FBColors.black,
+                                color: FBColors.lightblack,
                               ),
                         ),
                       ),
@@ -269,16 +269,16 @@ class _GiftCardState extends State<GiftCard> {
                       padding: EdgeInsets.only(top: 20.sp),
                       child: Container(
                         height: 50.sp,
-                        width: 200.w,
+                        width: 150.w,
                         decoration: BoxDecoration(
-                            border: Border.all(color: FBColors.green),
+                            border: Border.all(color: FBColors.parrotgreen),
                             borderRadius: BorderRadius.circular(4),
-                            color: FBColors.green),
+                            color: FBColors.parrotgreen),
                         child: Center(
                           child: Text(
                             'Order Online',
                             style: fbTextTheme().labelLarge?.copyWith(
-                                  color: FBColors.white,
+                                  color: FBColors.offwhite,
                                 ),
                           ),
                         ),
@@ -300,7 +300,9 @@ class _GiftCardState extends State<GiftCard> {
                   children: [
                     Text(
                       "Corporate Gifting",
-                     ),
+                     style: fbTextTheme().headlineLarge?.copyWith(
+                                  color: FBColors.darkgrey,
+                                ), ),
                     Padding(
                       padding: EdgeInsets.only(top: 20.sp),
                       child: SizedBox(
@@ -309,7 +311,7 @@ class _GiftCardState extends State<GiftCard> {
                           child: Text(
                             " Treat your customers or reward your employees with the gift of travel.",
                             style: fbTextTheme().displaySmall?.copyWith(
-                                  color: FBColors.black,
+                                  color: FBColors.lightblack,
                                 ),
                           )),
                     ),
@@ -321,7 +323,7 @@ class _GiftCardState extends State<GiftCard> {
                           child: Text(
                             "To find out more or place an order, email us at giftcards@webjet.com.au. Our dedicated team will collate all of the required information and arrange for your eGift Cards to be delivered to your lucky recipients.",
                             style: fbTextTheme().displaySmall?.copyWith(
-                                  color: FBColors.black,
+                                  color: FBColors.lightblack,
                                 ),
                           )),
                     ),
@@ -329,16 +331,16 @@ class _GiftCardState extends State<GiftCard> {
                       padding: EdgeInsets.only(top: 20.sp),
                       child: Container(
                         height: 50.sp,
-                        width: 200.w,
+                        width: 150.w,
                         decoration: BoxDecoration(
-                            border: Border.all(color: FBColors.green),
+                            border: Border.all(color: FBColors.parrotgreen),
                             borderRadius: BorderRadius.circular(4),
-                            color: FBColors.green),
+                            color: FBColors.parrotgreen),
                         child: Center(
                           child: Text(
                             'Contact Us',
                             style: fbTextTheme().labelLarge?.copyWith(
-                                  color: FBColors.white,
+                                  color: FBColors.offwhite,
                                 ),
                           ),
                         ),

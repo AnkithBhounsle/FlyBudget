@@ -6,6 +6,7 @@ import 'package:fly_jet/screen/view_screen.dart';
 import 'package:fly_jet/widgets/airlinecredit.dart';
 import 'package:fly_jet/widgets/change_mybooking.dart';
 import 'package:fly_jet/widgets/giftcard.dart';
+import 'package:fly_jet/widgets/giftcardbalance.dart';
 import 'package:fly_jet/widgets/login.dart';
 import 'package:fly_jet/widgets/online_checkin.dart';
 import 'package:fly_jet/widgets/register1.dart';
@@ -138,14 +139,14 @@ class _HeaderState extends State<Header> {
               if (choice == 'redeem_credit') {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => const AirLineCredit()));
               } else if (choice == 'gift_card_balance') {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const GiftCard()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const GiftCardBalancePage()));
               } else if (choice == 'faqs') {
-                 Navigator.push(context, MaterialPageRoute(builder: (context) => const ViewDescriptionPage()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const ViewScreen()));
                 // Implement FAQs logic
               } else if (choice == 'contact_us') {
                Navigator.push(context, MaterialPageRoute(builder: (context) => const ViewScreen()));
               } else if (choice == 'feedback') {
-                // Implement feedback logic
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const ViewScreen())); // Implement feedback logic
               }
             },
           ),
