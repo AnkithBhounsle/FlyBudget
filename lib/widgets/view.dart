@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fly_jet/common/colors.dart';
+import 'package:fly_jet/common/theme.dart';
 
 class ViewPage extends StatefulWidget {
   const ViewPage({super.key});
@@ -12,84 +14,86 @@ class _ViewPageState extends State<ViewPage> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 80, right: 80),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        const Row(
+      padding: EdgeInsets.only(left: 80.w, right: 80.w),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start, 
+        children: [
+         Row(
           children: [
             Text(
               "Home",
-              style: TextStyle(color: Colors.blue),
+             style: fbTextTheme().displaySmall?.copyWith(
+                                color: FBColors.black,
+                              ),  
             ),
             Icon(Icons.arrow_right),
             Text("Support",
-                style:
-                    TextStyle(fontWeight: FontWeight.bold, color: Colors.blue)),
+             style: fbTextTheme().displaySmall?.copyWith(
+                                color: FBColors.black,
+                              ),    ),
           ],
         ),
         Container(
-          padding: const EdgeInsets.only(top: 170,right: 20,left: 20),
+          padding:  EdgeInsets.only(top: 170.sp,right: 20.w,left: 20.w),
           width: 1500.w,
           height: 220.sp,
-          color: const Color.fromARGB(255, 203, 19, 6),
-         // alignment: Alignment.bottomLeft,
-          child: 
-
-          const Text(
+          color:  FBColors.Red,
+          child:  Text(
             "We're here to help you",
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              fontSize: 40,
-            ),
-            //  textAlign: TextAlign.left,
-          ),
+              style: fbTextTheme().headlineLarge?.copyWith(
+                                color: FBColors.white,
+                              ),   
+                              ),
         ),
         Container(
           decoration: BoxDecoration(
               border: Border.all(
-                color: const Color.fromARGB(255, 243, 237, 237),
+                color: FBColors.white,
               ),
-              color: const Color.fromARGB(255, 234, 229, 229)),
+             color: FBColors.white   ),
           child: SizedBox(
             height: 250.sp,
             child: Padding(
-              padding: const EdgeInsets.only(left: 8.0, top: 60),
+              padding:  EdgeInsets.only(left: 8.w, top: 60.sp),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  const Text(
+                   Text(
                     "Please note, for Qantas bookings made before 30 SEP 21, we are in the process of submitting COVID credits to Qantas for a refund.There is no need to contact us as we will communicate with you via email over the next 6 weeks.  ",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18,),
+                      style: fbTextTheme().labelLarge?.copyWith(
+                                color: FBColors. lightblack,
+                              ), 
                   ),
-                  // ),
-                  Padding(
-                    padding: const EdgeInsets.only(top:18.0),
+                    Padding(
+                    padding:  EdgeInsets.only(top:18.sp),
                     child: SizedBox(
-                      height: 60,
+                      height: 60.h,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const Text(
+                           Text(
                             "I want to :",
                             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
-                          const SizedBox(
-                            width: 30,
+                           SizedBox(
+                            width: 30.w,
                           ),
                           Center(
                             child: Container(
                               decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.grey),borderRadius: BorderRadius.circular(5),
-                                  color: Colors.grey),
+                                  border: Border.all(color: FBColors.lightgrey ),
+                                  borderRadius: BorderRadius.circular(5),
+                                  color: FBColors.lightgrey),
                               width: 165.w,
                               height: 60.sp,
                               child: TextButton(
                                 onPressed: () {
-                                  // Add your action for the first button here
-                                },
-                                child: const Text(
+                               },
+                                child:  Text(
                                   "Change My Booking",
-                                  style: TextStyle(color: Color.fromRGBO(0, 0, 0, 1),fontSize: 15, ),
-                                ),
+                                 style: fbTextTheme().labelLarge?.copyWith(
+                                color: FBColors. lightblack,
+                              ),            ),
                               ),
                             ),
                           ),
@@ -98,18 +102,19 @@ class _ViewPageState extends State<ViewPage> {
                           ),
                           Container(
                             decoration: BoxDecoration(
-                                border: Border.all(color: Colors.grey),borderRadius: BorderRadius.circular(5),
-                                color: Colors.grey),
+                                border: Border.all(color: FBColors.lightgrey),borderRadius: BorderRadius.circular(5),
+                                color: FBColors.lightgrey),
                             width: 165.w,
                             height: 70.sp,
                             child: TextButton(
                               onPressed: () {
                                 // Add your action for the first button here
                               },
-                              child: const Text(
+                              child:  Text(
                                 "Cancel My Booking",
-                                style: TextStyle(color: Colors.black,fontSize: 15),
-                              ),
+                                style: fbTextTheme().labelLarge?.copyWith(
+                                color: FBColors. lightblack,
+                              ),         ),
                             ),
                           ),
                            SizedBox(
@@ -117,18 +122,19 @@ class _ViewPageState extends State<ViewPage> {
                           ),
                           Container(
                             decoration: BoxDecoration(
-                                border: Border.all(color: Colors.grey),borderRadius: BorderRadius.circular(5),
-                                color: Colors.grey),
+                                border: Border.all(color:  FBColors.lightgrey),borderRadius: BorderRadius.circular(5),
+                                color:  FBColors.lightgrey),
                             width: 200.w,
                             height: 70.sp,
                             child: TextButton(
                               onPressed: () {
                                 // Add your action for the first button here
                               },
-                              child: const Text(
+                              child:  Text(
                                 "Redeem My Airline Credit",
-                                style: TextStyle(color: Colors.black,fontSize: 15),
-                              ),
+                               style: fbTextTheme().labelLarge?.copyWith(
+                                color: FBColors. lightblack,
+                              ),          ),
                             ),
                           ),
                         ],

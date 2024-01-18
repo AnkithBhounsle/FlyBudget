@@ -3,7 +3,6 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Listview extends StatefulWidget {
   const Listview({super.key});
@@ -33,27 +32,45 @@ class _ListviewState extends State<Listview> {
     return Column(
        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-            ListView.builder(
-    shrinkWrap :true,
-    itemCount:_listviewItems.length,
-    itemBuilder: (BuildContext context, int id) {
-    var listview = _listviewItems[id];
-    bool isExpanded = listview["isExpanded"] ?? false;
-    return Column(
-                children: [
-                  Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(
-                            // _listItems[id].title,
-                            listview["title"],
-                            style: const TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
+            Padding(
+              padding:  EdgeInsets.only(left:100.w),
+              child: Text("Most questions can be answered by browsing our FAQs:",
+                      
+                                  style: fbTextTheme(). displaySmall?.copyWith(
+                                color: FBColors.lightblack,
+                                fontSize: 18
+                              ),
+                              
+              ),
+            ),
+            SizedBox(
+              height: 20.sp,
+            ),
+            Padding(
+              padding:  EdgeInsets.only(left:100.w,right:100.sp),
+              child: ListView.builder(
+                  shrinkWrap :true,
+                  itemCount:_listviewItems.length,
+                  itemBuilder: (BuildContext context, int id) {
+                  var listview = _listviewItems[id];
+                  bool isExpanded = listview["isExpanded"] ?? false;
+                  return Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                      
+                    Column(
+                         mainAxisAlignment: MainAxisAlignment.start,
+                    
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                           
+                            Text(
+                                 listview["title"],
+                                style: fbTextTheme(). labelLarge?.copyWith(
+                              color: FBColors.lightblack,
                             ),
                           ),
                           InkWell(
@@ -68,7 +85,7 @@ class _ListviewState extends State<Listview> {
                           ),
                         ],
                       ),
-                       SizedBox(height: 20.sp),
+                      const SizedBox(height: 20),
                       if (isExpanded)...{
                         Column(
                           children: [
@@ -91,12 +108,9 @@ class _ListviewState extends State<Listview> {
               );
        }     ),
        
-        const Divider(
-          color: Colors.grey,
-          thickness: 1,
-        ),        
- ],
-);                
+         
+     ],
+    );                
  }
   }
 

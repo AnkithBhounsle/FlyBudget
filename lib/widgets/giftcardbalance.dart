@@ -92,18 +92,14 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
                      ),
                    ),
                  ), 
-              // Other properties
-             
               SizedBox(
               height: 50.sp,
               width: 440.w,
               child: const Padding(
                 padding: EdgeInsets.only(top:15.0),
                 child: Text("This is the 12 characters located above the barcode on the back of your plastic physical card, or on the front of your digital eGift Card.",style: TextStyle(color: Colors.grey,fontSize: 13),),
-              )),
-             
-             
-             Padding(
+              ),),
+               Padding(
               padding: const EdgeInsets.only(top:15.0,left: 4),
               child:   Container(
                height: 50.sp,

@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fly_jet/common/colors.dart';
+import 'package:fly_jet/common/theme.dart';
 
 class ListPage extends StatefulWidget {
   const ListPage({Key? key}) : super(key: key);
@@ -36,7 +38,7 @@ class _ListPageState extends State<ListPage> {
       children: [
        
         Padding(
-          padding: const EdgeInsets.only(left: 30.0),
+          padding:  EdgeInsets.only(left: 30.w),
           child: ListView.builder(
             shrinkWrap: true,
             itemCount: _listItems.length,
@@ -46,6 +48,8 @@ class _ListPageState extends State<ListPage> {
               return Column(
                 children: [
                   Column(
+                     mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -54,10 +58,9 @@ class _ListPageState extends State<ListPage> {
                           Text(
                             // _listItems[id].title,
                             list["title"],
-                            style: const TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
+                            style: fbTextTheme().displaySmall?.copyWith(
+                                color: FBColors. dark,
+                             
                             ),
                           ),
                           InkWell(
@@ -75,10 +78,13 @@ class _ListPageState extends State<ListPage> {
                        SizedBox(height: 20.sp),
                       if (isExpanded)...{
                         Column(
+                           mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+       
                           children: [
                            // Text(list["description"]),
                             Padding(
-                              padding: const EdgeInsets.only(left: 30.0,top:20),
+                              padding:  EdgeInsets.only(left: 30.w,top:20.sp),
                               child: Text(list["description"]),
                             ),
 ],
@@ -87,7 +93,7 @@ class _ListPageState extends State<ListPage> {
                     ],
                   ),
                   const Divider(
-                    color: Colors.black,
+                    color: FBColors.black,
                     thickness: 2,
                   )
                 ],
@@ -96,23 +102,27 @@ class _ListPageState extends State<ListPage> {
               ),
         ),
         Padding(
-          padding: const EdgeInsets.only(top:80.0,left: 15),
+          padding:  EdgeInsets.only(top:80.sp,left: 15.w),
           child:  SizedBox(
             width: 1500.w,
             height: 100.sp,
-            child: const Text(
+            child:  Text(
               "Prices are subject to availability, include taxes and airline surcharges. All prices on this page are subject to change without notice. Whilst Webjet makes every effort to provide you with accurate and up-to-date information, in the event a product is listed at an incorrect price, whether due to typographical, photographic, or otherwise, Webjet may refuse or cancel any orders placed for a product listed at the incorrect price.,",
-           style: TextStyle(fontSize: 20), ),
+        style: fbTextTheme().displaySmall?.copyWith(
+                                color: FBColors.black,
+                              ),  
+            ),
           ),
         ),
         Center(
           child: Container(
-            decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey),
-              color: Colors.grey,
-            ),
-            width: 113.w,
+             width: 113.w,
             height: 50.sp,
+            decoration: BoxDecoration(
+              border: Border.all(color: FBColors.grey),
+              color: FBColors.grey,
+            ),
+           
             child: Row(
               children: [
                 InkWell(
@@ -127,9 +137,12 @@ class _ListPageState extends State<ListPage> {
                   onPressed: () {
                     // Add your action for the button here
                   },
-                  child: const Text(
+                  child:  Text(
                     "Back to top",
-                    style: TextStyle(color: Colors.black),
+                       style: fbTextTheme().displaySmall?.copyWith(
+                                color: FBColors. dark,
+                              ), 
+                   
                   ),
                 ),
               ],
