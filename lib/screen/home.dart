@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:fly_jet/common/device.dart';
 import 'package:fly_jet/common/theme.dart';
-import 'package:fly_jet/widgets/change_mybooking.dart';
+import 'package:fly_jet/screen/view_screen.dart';
 import 'package:fly_jet/widgets/flights.dart';
 import 'package:fly_jet/widgets/footer.dart';
 import 'package:fly_jet/widgets/header.dart';
@@ -38,13 +38,18 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Header(),
-             MainMenuBar(),
-            SearchPlan(),
-            
-             //InternationalDeals(),
-            
-            FlightsInHome(),
-            Footer(),
+              MainMenuBar(),
+            //Register1Page(),
+            ViewScreen(),
+           // ListPage(),
+         //Listview(),
+           // SearchPlan(),
+      //  GiftCard(),
+          //  InternationalDeals(),
+          //  
+           // FlightsInHome(),
+          //  Footer(),
+         //  OnlineCheckin(),
           ],
         ),
       ),

@@ -13,8 +13,8 @@ class ChangeBooking1 extends StatefulWidget {
 class _ChangeBookingState extends State<ChangeBooking1> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
+    return 
+       SingleChildScrollView(
         child: Center(
           child: Container(
             width: 1150.w,
@@ -361,7 +361,7 @@ class _ChangeBookingState extends State<ChangeBooking1> {
             ),
           ),
         ),
-      ),
-    );
+      );
+  
   }
 }

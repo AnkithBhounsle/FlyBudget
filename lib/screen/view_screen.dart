@@ -31,13 +31,13 @@ class _ViewScreenState extends State<ViewScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
           
-          SizedBox(height: 25,),
+         // SizedBox(height: 25,),
          
-             ViewPage(),
-           SizedBox(height: 25,),
-            Listview(),
-            SizedBox(height: 25,),
-           ViewDescriptionPage(),
+          //   ViewPage(),
+          // SizedBox(height: 25,),
+         //   Listview(),
+          //  SizedBox(height: 25,),
+         //  ViewDescriptionPage(),
            SizedBox(height: 25,),
            View2Img(),            
           ],
