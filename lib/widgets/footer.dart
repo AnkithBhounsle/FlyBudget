@@ -63,7 +63,9 @@ class _FooterState extends State<Footer> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -84,7 +86,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                 SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -105,7 +109,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                 SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -126,7 +132,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -147,7 +155,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -168,7 +178,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                 SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -233,7 +245,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -254,7 +268,9 @@ class _FooterState extends State<Footer> {
                       ),
                     ],
                   ),
-                 SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -275,7 +291,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -296,7 +314,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -317,7 +337,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                 SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -338,7 +360,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -359,7 +383,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -380,7 +406,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -401,7 +429,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -514,7 +544,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -535,7 +567,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -556,7 +590,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -577,7 +613,9 @@ class _FooterState extends State<Footer> {
                       )
                     ],
                   ),
-                  SizedBox(height: 5.h,),
+                  SizedBox(
+                    height: 5.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -631,7 +669,8 @@ class _FooterState extends State<Footer> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const ChangeBooking1()));
+                                  builder: (context) =>
+                                      const ChangeBooking1()));
                           // Add your action for the first button here
                         },
                         child: Text(
@@ -669,7 +708,6 @@ class _FooterState extends State<Footer> {
                     ),
                   ),
                   SizedBox(height: 8.sp),
-                  
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -691,8 +729,10 @@ class _FooterState extends State<Footer> {
                       //Icon(icon.)
                     ],
                   ),
-                   SizedBox(height: 10.h,),
-                   Row(
+                  SizedBox(
+                    height: 10.h,
+                  ),
+                  Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -713,7 +753,9 @@ class _FooterState extends State<Footer> {
                       //Icon(icon.)
                     ],
                   ),
-                  SizedBox(height: 10.h,),
+                  SizedBox(
+                    height: 10.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -732,7 +774,9 @@ class _FooterState extends State<Footer> {
                       //Icon(icon.)
                     ],
                   ),
-                  SizedBox(height: 10.h,),
+                  SizedBox(
+                    height: 10.h,
+                  ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
