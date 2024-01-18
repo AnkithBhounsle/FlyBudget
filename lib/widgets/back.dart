@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fly_jet/common/theme.dart';
+
+import '../common/colors.dart';
 
 class BackPage extends StatefulWidget {
   const BackPage({super.key});
@@ -24,7 +27,9 @@ class _BackPageState extends State<BackPage> {
                        onPressed: () {
                         // Add your action for the first button here
                       },
-                       child: const Text( "Back to top", style: TextStyle(color: Colors.black),),
+                       child:  Text( "Back to top",
+                       style:fbTextTheme().displaySmall?.copyWith(
+                        color:FBColors.black)),
                     ),
                   ],
                  ),

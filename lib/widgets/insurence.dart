@@ -2,6 +2,9 @@
 // ignore: unnecessary_import
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fly_jet/common/colors.dart';
+
+import '../common/theme.dart';
 
 class InsurencePage extends StatefulWidget {
   const InsurencePage({super.key});
@@ -16,7 +19,9 @@ class _InsurencePageState extends State<InsurencePage> {
     return Column(
 
       children: [
-        const Text('Get a Travel Insurance Quote',style: TextStyle(color: Colors.black,fontSize: 25,fontWeight: FontWeight.bold),),
+         Text('Get a Travel Insurance Quote',
+         style:fbTextTheme().displayLarge?.copyWith(
+                        color:FBColors.black,)),
   Center(
     child: Row(
       children: [
@@ -39,11 +44,11 @@ class _InsurencePageState extends State<InsurencePage> {
                                    decoration: BoxDecoration(
                                   border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(5),color: Colors.white,
                                          ),
-                                         child: const Padding(
+                                         child:  Padding(
                                            padding: EdgeInsets.only( left:8.0),
                                            child: TextField(
-                                                                style: TextStyle(
-                                                                    color: Color.fromARGB(255, 0, 0, 0)),
+                                                                style:fbTextTheme().displayLarge?.copyWith(
+                        color:FBColors.black,),
                                                                 decoration: InputDecoration(
                                                                   hintText: 'Type a Country or Region',
                                                                 border: InputBorder.none,
@@ -56,13 +61,15 @@ class _InsurencePageState extends State<InsurencePage> {
           ),
         ),
          Padding(
-           padding: const EdgeInsets.only(left:30.0,),
+           padding:  EdgeInsets.only(left:30.0,),
            child: Column(
             children: [
-              const Text('When is your trip ?',style: TextStyle( fontSize: 18)),
-               const Padding(
+               Text('When is your trip ?', style:fbTextTheme().displayLarge?.copyWith(
+                        color:FBColors.black,)),
+                Padding(
                 padding: EdgeInsets.only(top:20.0),
-                 child: Text('Departure time'),
+                 child: Text('Departure time', style:fbTextTheme().displayLarge?.copyWith(
+                        color:FBColors.black,)),
                ),
                Padding(
                  padding: const EdgeInsets.only(top:20.0),
@@ -85,9 +92,10 @@ class _InsurencePageState extends State<InsurencePage> {
                                          ),
                                        ),
                ),
-                                      const Padding(
+                                       Padding(
                                         padding: EdgeInsets.only(top:30.0),
-                                        child: Text('Departure time'),
+                                        child: Text('Departure time', style:fbTextTheme().displayMedium?.copyWith(
+                        color:FBColors.black,)),
                                       ),
                Padding(
                  padding: const EdgeInsets.only(top:20.0),
@@ -119,7 +127,8 @@ class _InsurencePageState extends State<InsurencePage> {
           padding: const EdgeInsets.only(left:80.0,top:50),
           child: Column(
             children: [
-              const Text('Current age of travellers',style: TextStyle( fontSize: 18)),
+             Text('Current age of travellers', style:fbTextTheme().displayMedium?.copyWith(
+                        color:FBColors.black,)),
                Padding(
                  padding: const EdgeInsets.only(top:30.0),
                  child: Row(
@@ -150,21 +159,22 @@ class _InsurencePageState extends State<InsurencePage> {
            children: [
              Padding(
                padding: EdgeInsets.only(top:20.0,bottom:30),
-               child: Text('Do all travellers:',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),),
+               child: Text('Do all travellers:', style:fbTextTheme().displayLarge?.copyWith(
+                        color:FBColors.black,),),
              ),
              SizedBox(
               height:120.sp ,
               width: 220.w,
-              child: Text('Currently live in Australia and hold a valid Australian Medicare card or visa allowing them to live, work or study in Australia?',style: TextStyle( fontSize: 18),),),
+              child: Text('Currently live in Australia and hold a valid Australian Medicare card or visa allowing them to live, work or study in Australia?',
+               style:fbTextTheme().displaySmall?.copyWith(
+                        color:FBColors.black,)),),
           Center(
                         child: Text("GET A QUOTE",
-                            style: TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                             style:fbTextTheme().displayLarge?.copyWith(
+                        color:FBColors.black,),
                             ),
                             ),
-                            ),
+                            
          
            ],
          ),

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fly_jet/common/colors.dart';
+
+import '../common/theme.dart';
 
 class InternationalDeals extends StatefulWidget {
   const InternationalDeals({super.key});
@@ -20,14 +23,23 @@ class _InternationalDealsState extends State<InternationalDeals> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(
+                Text(
                   "Jump to:",
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                        color:Color(0xff333333),fontWeight: FontWeight.bold,fontSize:18),
                 ),
                  SizedBox(width: 8.w),
-                const Text("Domestic deals"),
+                 Text("Domestic deals",
+                 style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color: Color(0xFFDC362E),fontSize:15)),
                  SizedBox(width: 8.w),
-                const Text("International deals"),
+                 Text("International deals",
+                 style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color: Color(0xFFDC362E),fontSize:15)
+                ),
                  SizedBox(width: 8.w),
                 Container(
                   height: 50.sp,
@@ -39,28 +51,31 @@ class _InternationalDealsState extends State<InternationalDeals> {
                     color: const Color.fromARGB(255, 59, 242, 65),
                     borderRadius: BorderRadius.circular(3),
                   ),
-                  child: const Center(
+                  child:  Center(
                       child: Text("Search all flights",
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ))),
+                           style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color:Color(0xffFFFBFE),fontSize:15))),
                 )
               ],
             ),
-            const Center(
+             Center(
               child: Text(
                 "Find a Domestic Flight Deal",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                style: 
+                   fbTextTheme().displayLarge?.copyWith(
+                color:Color(0xff333333),
+            fontSize: 20),
               ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(
-                  "Departing from",
-                  style: TextStyle(fontSize: 20),
+               Text(
+                  "Departing from", style: 
+                   fbTextTheme().displayMedium?.copyWith(
+                color:
+                  Color(0xff333333),fontSize: 20),
                 ),
                  SizedBox(width: 8.w),
                 DropdownButtonHideUnderline(
@@ -85,9 +100,12 @@ class _InternationalDealsState extends State<InternationalDeals> {
                   ),
                 ),
                 const SizedBox(width: 8),
-                const Text(
+                 Text(
                   "travelling to ",
-                  style: TextStyle(fontSize: 20),
+                  style: 
+                   fbTextTheme().displayMedium?.copyWith(
+                color:
+                  Color(0xff333333),fontSize: 20),
                 ),
                 const SizedBox(width: 8),
                 DropdownButtonHideUnderline(
