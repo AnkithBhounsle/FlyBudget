@@ -8,6 +8,7 @@ import 'package:fly_jet/widgets/footer.dart';
 import 'package:fly_jet/widgets/header.dart';
 import 'package:fly_jet/widgets/internationaldeals.dart';
 import 'package:fly_jet/widgets/main_menu.dart';
+import 'package:fly_jet/widgets/online_checkin.dart';
 import 'package:fly_jet/widgets/searchplan.dart';
 
 class HomePage extends StatefulWidget {
@@ -38,18 +39,11 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Header(),
-              MainMenuBar(),
-            //Register1Page(),
-            ViewScreen(),
-           // ListPage(),
-         //Listview(),
-           // SearchPlan(),
-      //  GiftCard(),
-          //  InternationalDeals(),
-          //  
-           // FlightsInHome(),
-          //  Footer(),
-         //  OnlineCheckin(),
+            MainMenuBar(),
+            SearchPlan(),
+            FlightsInHome(),
+            Footer(),
+
           ],
         ),
       ),

@@ -83,19 +83,14 @@ class FBColors {
 
   static const Color divider1 = Color(0xffC9C5CA);
   static const Color cement = Color(0xff897972);
-    static const Color darkgrey = Color(0xff646464);
-     static const Color lightgrey = Color(0xffDFDFDF);
-       static const Color lightblack = Color(0xff333333);
-        static const Color Red = Color(0xffDC140A);
+  static const Color darkgrey = Color(0xff646464);
+  static const Color lightgrey = Color(0xffDFDFDF);
+  static const Color lightblack = Color(0xff333333);
+  static const Color Red = Color(0xffDC140A);
   static const Color offwhite = Color(0xffFFFFFF);
- static const Color parrotgreen = Color(0xff2DB300);
+  static const Color parrotgreen = Color(0xff2DB300);
 
   static const Color lightO = Color(0xffFFF3CD);
   static const Color dark = Color(0xff646464);
   static const Color lightP = Color(0xffF6F2F6);
- // static const Color lightblack = Color(0xff646464);
-//  static const Color Red = Color(0xffDC140A);
-//  static const Color lightgrey = Color(0xffDFDFDF);
-//  static const Color darkgrey = Color(0xff333333);
-
 }
