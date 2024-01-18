@@ -97,7 +97,7 @@ class _View2ImgState extends State<View2Img> {
                     child: Image.asset(
                       'assets/newsletter-screenshot.png',
                       height: 280.sp,
-                      width: 180.w,
+                      width: 150.w,
                     ),
                   ),
                 ],
