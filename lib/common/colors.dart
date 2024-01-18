@@ -5,7 +5,7 @@ class FBColors {
 
   static const Color black = Color(0xff000000);
   static const Color white = Color(0xffFFFFFF);
-  static const Color green = Color(0xff00FF00);
+  static const Color green = Color.fromARGB(255, 17, 235, 17);
   static const Color disabled = Color(0x1E1C1B1F);
   static const Color grey = Color(0xD8D8D8FF);
   static const Color border = Color(0xFFDADADA);
@@ -89,5 +89,13 @@ class FBColors {
         static const Color Red = Color(0xffDC140A);
   static const Color offwhite = Color(0xffFFFFFF);
  static const Color parrotgreen = Color(0xff2DB300);
+
+  static const Color lightO = Color(0xffFFF3CD);
+  static const Color dark = Color(0xff646464);
+  static const Color lightP = Color(0xffF6F2F6);
+ // static const Color lightblack = Color(0xff646464);
+//  static const Color Red = Color(0xffDC140A);
+//  static const Color lightgrey = Color(0xffDFDFDF);
+//  static const Color darkgrey = Color(0xff333333);
 
 }
