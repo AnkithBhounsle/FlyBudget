@@ -530,7 +530,7 @@ class _GiftCardState extends State<GiftCard> {
                 child:    Text(
                         "Back to top",
                         style: fbTextTheme().displaySmall?.copyWith(
-                              color: FBColors.black,
+                              color: FBColors.lightblack,
                             ),
                       ),
                     ),
