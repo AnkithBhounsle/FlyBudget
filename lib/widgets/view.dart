@@ -23,18 +23,18 @@ class _ViewPageState extends State<ViewPage> {
             Text(
               "Home",
              style: fbTextTheme().displaySmall?.copyWith(
-                                color: FBColors.black,
+                                color: FBColors.blue,
                               ),  
             ),
             Icon(Icons.arrow_right),
             Text("Support",
              style: fbTextTheme().displaySmall?.copyWith(
-                                color: FBColors.black,
+                                color: FBColors.blue,
                               ),    ),
           ],
         ),
         Container(
-          padding:  EdgeInsets.only(top: 170.sp,right: 20.w,left: 20.w),
+       padding:  EdgeInsets.only(top: 170.sp,right: 20.w,left: 20.w),
           width: 1500.w,
           height: 220.sp,
           color:  FBColors.Red,
@@ -53,9 +53,11 @@ class _ViewPageState extends State<ViewPage> {
              color: FBColors.white   ),
           child: SizedBox(
             height: 250.sp,
-            child: Padding(
-              padding:  EdgeInsets.only(left: 8.w, top: 60.sp),
-              child: Column(
+            child: 
+            // Padding(
+            //   padding:  EdgeInsets.only(left: 8.w, top: 60.sp),
+        //  child:
+           Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                    Text(
@@ -147,8 +149,10 @@ class _ViewPageState extends State<ViewPage> {
               ),
             ),
           ),
-        )
-      ]),
-    );
+        ],
+        ),
+     // ],
+      );
+   // );
   }
 }

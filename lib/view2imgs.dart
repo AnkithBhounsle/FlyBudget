@@ -21,8 +21,8 @@ class _View2ImgState extends State<View2Img> {
             decoration: BoxDecoration(
               border: Border.all(color: FBColors.darkgrey),
             ),
-            width: 520.w,
-            height: 160.sp,
+            width: 550.w,
+            height: 200.sp,
             child: Padding(
               padding: EdgeInsets.only(left: 20.w, top: 25.sp),
               child: Row(
@@ -105,14 +105,14 @@ class _View2ImgState extends State<View2Img> {
             ),
           ),
           SizedBox(
-            width:20.w
+            width:30.w
           ),
           Container(
             decoration: BoxDecoration(
               border: Border.all(color: FBColors.darkgrey,),
             ),
-            width: 520.w,
-            height: 160.sp,
+            width: 550.w,
+            height: 200.sp,
             child: Row(
               children: [
                 Column(
