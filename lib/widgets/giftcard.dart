@@ -353,197 +353,188 @@ class _GiftCardState extends State<GiftCard> {
                     height: 500.sp, width: 500.w),
               ],
             ),
+             
             Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                SizedBox(width: 50.w),
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(color: FBColors.black),
-                  ),
-                  width: 520.w,
-                  height: 160.sp,
-                  child: Padding(
-                    padding: EdgeInsets.only(left: 20.w, top: 25.sp),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Subscribe to our Newsletters',
-                              style: fbTextTheme().displaySmall?.copyWith(
-                                    color: FBColors.black,
-                                  ),
-                            ),
-                            Text(
-                              'Be the first to hear about travel deals',
-                              style: fbTextTheme().displaySmall?.copyWith(
-                                    color: FBColors.black,
-                                  ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(top: 25.sp),
-                              child: Row(
-                                children: [
-                                  Container(
-                                    height: 50.sp,
-                                    width: 200.w,
-                                    decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.grey),
-                                      borderRadius: BorderRadius.circular(3),
-                                      color: FBColors.white,
-                                    ),
-                                    child: Padding(
-                                      padding: EdgeInsets.only(left: 8.w),
-                                      child: TextField(
-                                        style: fbTextTheme()
-                                            .displaySmall
-                                            ?.copyWith(
-                                              color: FBColors.black,
-                                            ),
-                                        decoration: const InputDecoration(
-                                          hintText: 'Enter Your Email Address',
-                                          border: InputBorder.none,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  //
-                                  Padding(
-                                    padding: EdgeInsets.only(left: 20.w),
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                          border:
-                                              Border.all(color: FBColors.green),
-                                          borderRadius:
-                                              BorderRadius.circular(3),
-                                          color: FBColors.green),
-                                      width: 100.w,
-                                      height: 50.sp,
-                                      child: Center(
-                                        child: Text(
-                                          "Subscribe",
-                                          style: fbTextTheme()
-                                              .displaySmall
-                                              ?.copyWith(
-                                                color: FBColors.black,
-                                              ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(left: 18.w),
-                          child: Image.asset(
-                            'assets/newsletter-screenshot.png',
-                            height: 300.sp,
-                            width: 150.w,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(60.sp),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(color: FBColors.black),
-                    ),
-                    width: 540.w,
-                    height: 161.sp,
-                    child: Row(
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(left: 20.w, top: 25.sp),
-                              child:  Text(
-                                'Download our free App',
-                                style: fbTextTheme().displaySmall?.copyWith(
-                                    color: FBColors.grey,
-                                  ),    ),
-                            ),
-                            Text(
-                              'Access to travel deals in the palm of your hand',
-                              style: fbTextTheme().displaySmall?.copyWith(
-                                    color: FBColors.grey,
-                                  ),
-                              //  TextStyle(color: Colors.grey, fontSize: 15),
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding:
-                                      EdgeInsets.only(left: 10.w, top: 30.sp),
-                                  child: Image.asset(
-                                    'assets/app-store.png',
-                                    height: 40.sp,
-                                    width: 100.w,
-                                  ),
-                                ),
-                                Padding(
-                                  padding:
-                                      EdgeInsets.only(left: 10.w, top: 30.sp),
-                                  child: Image.asset(
-                                    'assets/play-store.png',
-                                    height: 40.sp,
-                                    width: 100.w,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(left: 20.w),
-                          child: Image.asset(
-                            'assets/app-screenshot.png',
-                            height: 280.sp,
-                            width: 150.w,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
+        children: [
+           SizedBox(width: 50.w),
+          Container(
+            decoration: BoxDecoration(
+              border: Border.all(color: FBColors.darkgrey),
             ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 3000.sp),
-              child: Center(
-                child: Container(
-                  decoration: BoxDecoration(
-                      border: Border.all(color: FBColors.grey),
-                      color: FBColors.grey),
-                  width: 150.w,
-                  height: 50.sp,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+            width: 550.w,
+            height: 200.sp,
+            child: Padding(
+              padding: EdgeInsets.only(left: 20.w, top: 25.sp),
+              child: Row(
+                children: [
+                  Column(
                     children: [
-                      const Icon(Icons.arrow_drop_up_outlined),
-                      TextButton(
-                        onPressed: () {
-                         
-                        },
-                        child: Text(
-                          "Back to top",
-                          style: fbTextTheme().displaySmall?.copyWith(
-                                color: FBColors.black,
+                      Text(
+                        'Subscribe to our Newsletters',
+                        style: fbTextTheme().titleLarge?.copyWith(
+                              color: FBColors.lightblack,
+                            ),
+                      ),
+                      Text(
+                        'Be the first to hear about travel deals',
+                        style: fbTextTheme().labelLarge?.copyWith(
+                              color: FBColors.darkgrey,
+                            ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(top: 25.sp),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 50.sp,
+                              width: 200.w,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: FBColors.darkgrey),
+                                borderRadius: BorderRadius.circular(3),
+                                color: FBColors.offwhite,
                               ),
+                              child: Padding(
+                                padding: EdgeInsets.only(left: 8.w),
+                                child: TextField(
+                                  style: fbTextTheme().labelLarge?.copyWith(
+                                        color: FBColors.darkgrey,
+                                      ),
+                                  decoration: InputDecoration(
+                                    hintText: 'Enter Your Email Address',
+                                    border: InputBorder.none,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            //
+                            Padding(
+                              padding: EdgeInsets.only(left: 20.w),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    border:
+                                        Border.all(color: FBColors.parrotgreen),
+                                    borderRadius: BorderRadius.circular(3),
+                                    color: FBColors.parrotgreen),
+                                width: 100.w,
+                                height: 50.sp,
+                                child: Center(
+                                  child: Text(
+                                    "Subscribe",
+                                    style: fbTextTheme().labelLarge?.copyWith(
+                                          color: FBColors.offwhite,
+                                        ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
                   ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 18.w),
+                    child: Image.asset(
+                      'assets/newsletter-screenshot.png',
+                      height: 280.sp,
+                      width: 150.w,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            width:30.w
+          ),
+          Container(
+            decoration: BoxDecoration(
+              border: Border.all(color: FBColors.darkgrey,),
+            ),
+            width: 550.w,
+            height: 200.sp,
+            child: Row(
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(left: 20.w, top: 25.sp),
+                      child: Text(
+                        'Download our free App',
+                        style: fbTextTheme().titleLarge?.copyWith(
+                              color: FBColors.lightblack,
+                            ),
+                      ),
+                    ),
+                    Text(
+                      'Access to travel deals in the palm of your hand',
+                      style: fbTextTheme().labelLarge?.copyWith(
+                            color: FBColors.darkgrey,
+                          ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 10.w, top: 30.sp),
+                          child: Image.asset(
+                            'assets/app-store.png',
+                            height: 40.sp,
+                            width: 100.w,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 10.w, top: 30.sp),
+                          child: Image.asset(
+                            'assets/play-store.png',
+                            height: 40.sp,
+                            width: 100.w,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 20.w),
+                  child: Image.asset(
+                    'assets/app-screenshot.png',
+                    height: 250.sp,
+                    width: 150.w,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+      SizedBox(
+        height: 30.sp,
+      ),
+            Center(
+              child: Container(
+                decoration: BoxDecoration(
+                    border: Border.all(color: FBColors.grey),
+                    color: FBColors.grey),
+                width: 180.w,
+                height: 50.sp,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                     Icon(Icons.arrow_drop_up_outlined),
+                        TextButton(
+                      onPressed: () {
+                          
+                      },
+                child:    Text(
+                        "Back to top",
+                        style: fbTextTheme().displaySmall?.copyWith(
+                              color: FBColors.black,
+                            ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),

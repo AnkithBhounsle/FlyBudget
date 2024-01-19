@@ -32,7 +32,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
                           ),
                            ),
                             SizedBox(
-          height: 30.sp,
+          height: 35.sp,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -44,8 +44,8 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
               children: [
                 Image.asset(
                   'assets/message.jpg',
-                  height: 200,
-                  width: 300,
+                  height: 200.sp,
+                  width: 300.w,
                   fit: BoxFit.fill,
                 ),
                 Center(
@@ -67,7 +67,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
                           ),  ),
                 ),
                SizedBox(
-          height: 20.sp,
+          height: 35.sp,
         ),
                 Center(
                   child: Container(
@@ -101,7 +101,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Image.asset('assets/call.jpg',
-                    height: 200, width: 300, fit: BoxFit.fill),
+                    height: 200.sp, width: 300.w, fit: BoxFit.fill),
                 Center(
                     child: Text(
                   'Speak to an agent',
@@ -119,7 +119,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
                           ),  ),
                  ),
                   SizedBox(
-          height: 20.sp,
+          height: 35.sp,
         ),
                 Center(
                   child: Container(
@@ -154,7 +154,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
                mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Image.asset('assets/feedback.jpg',
-                    height: 200, width: 300, fit: BoxFit.fill),
+                    height: 200.sp, width: 300.w, fit: BoxFit.fill),
                 Center(
                   child: Text(
                     'Provide feedback',
@@ -164,7 +164,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
                   ),
                 ),
                  Container(
-                   height: 90.sp,
+                   height: 110.sp,
                   width: 300.w,
                  child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -184,7 +184,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
                    ),
                           ),
                            SizedBox(
-          height: 20.sp,
+          height: 30.sp,
         ),
                 Center(
                   child: Container(
