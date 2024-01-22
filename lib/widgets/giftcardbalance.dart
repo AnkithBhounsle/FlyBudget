@@ -66,7 +66,7 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
                     color: FBColors.lightgreyy2
                   ),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                    Container(
@@ -79,7 +79,7 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
                       child: Center(
                         child: Text("Check your Gift Card Balance & Expiry",
                         style: fbTextTheme().displaySmall?.copyWith(
-                          fontSize: 18,
+                          fontSize: 18.sp,
                           color: FBColors.offwhite,
                         ),),
                       ),),
@@ -88,7 +88,7 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
                       ),
                        Text("Webjet Gift Card Number",
                        style: fbTextTheme().labelMedium?.copyWith(
-                       fontSize: 12,
+                       fontSize: 12.sp,
                        color: FBColors.lightblack,
                       ),
                       ),
@@ -102,7 +102,7 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
                        ),
                        child: TextField(
                                             style: fbTextTheme().labelMedium?.copyWith(
-                     fontSize: 14,
+                     fontSize: 14.sp,
                      color: FBColors.lightblack,),
                       decoration: InputDecoration(
                                               hintText: 'Enter Gift Card Number',
@@ -119,7 +119,7 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
                     padding: EdgeInsets.only(top:15.sp),
                     child: Text("This is the 12 characters located above the barcode on the back of your plastic physical card, or on the front of your digital eGift Card.",
                    style: fbTextTheme().labelMedium?.copyWith(
-                       fontSize: 12,
+                       fontSize: 12.sp,
                        color: FBColors.lightgreyy1,
                       ),),
                   ),),
@@ -137,7 +137,7 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
                   ),
                    child:  Center(child: Text("Check Gift Card",
                  style: fbTextTheme().labelMedium?.copyWith(
-                     fontSize: 14,
+                     fontSize: 14.sp,
                      color: FBColors.offwhite)
                       ), 
                       ),
@@ -151,7 +151,7 @@ class _GiftCardBalanceState extends State<GiftCardBalancePage> {
                   width:440.w  ,
                   child:  Text("For more information about gift card use, FAQs and for the full terms and conditions please visit the gift card page." ,  
                  style: fbTextTheme().labelMedium?.copyWith(
-                     fontSize: 13,
+                     fontSize: 13.sp,
                      color: FBColors.lightgreyy1),  ),),
                   ),
                    ] 

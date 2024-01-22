@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fly_jet/screen/giftcardscreen.dart';
 import 'package:fly_jet/screen/international_screen.dart';
 import 'package:fly_jet/widgets/giftcard.dart';
 
@@ -182,7 +183,7 @@ class _MainMenuBarState extends State<MainMenuBar> {
                 )),
             TextButton(
                 onPressed: () {
-                   Navigator.push(context, MaterialPageRoute(builder: (context) => const GiftCard()));
+                   Navigator.push(context, MaterialPageRoute(builder: (context) => const GiftCardScreen()));
              
                 },
                 child: const Text(

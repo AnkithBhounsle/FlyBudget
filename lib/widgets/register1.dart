@@ -27,7 +27,7 @@ class _Register1PageState extends State<Register1Page> {
             children: [
              
               Padding(
-                padding:  EdgeInsets.only(left:100.w,bottom:30.sp),
+                padding:  EdgeInsets.only(left:130.w,bottom:30.sp),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
