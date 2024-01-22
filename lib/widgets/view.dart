@@ -51,21 +51,26 @@ class _ViewPageState extends State<ViewPage> {
                 color: FBColors.white,
               ),
              color: FBColors.white   ),
-          child: SizedBox(
-            height: 250.sp,
+         
+
             child: 
-            // Padding(
-            //   padding:  EdgeInsets.only(left: 8.w, top: 60.sp),
-        //  child:
+          
            Column(
+
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
+                   SizedBox(
+            height: 10.sp,
+          ),
                    Text(
                     "Please note, for Qantas bookings made before 30 SEP 21, we are in the process of submitting COVID credits to Qantas for a refund.There is no need to contact us as we will communicate with you via email over the next 6 weeks.  ",
                       style: fbTextTheme().labelLarge?.copyWith(
                                 color: FBColors. lightblack,
                               ), 
                   ),
+                   SizedBox(
+             height: 10.sp,
+         ),
                     Padding(
                     padding:  EdgeInsets.only(top:18.sp),
                     child: SizedBox(
@@ -148,11 +153,10 @@ class _ViewPageState extends State<ViewPage> {
                 ],
               ),
             ),
-          ),
-        ],
-        ),
-     // ],
-      );
-   // );
+      ],
+         ),
+        
+        );
+    
   }
 }

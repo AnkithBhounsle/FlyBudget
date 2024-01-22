@@ -57,7 +57,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
                   ),
                 ),
                 Container(
-                  height: 90.sp,
+                  height: 110.sp,
                   width: 300.w,
                   child: Text(
                       'A dedicated Customer Support team is available 24/7 on our messaging service to answer any queries you may have.',
@@ -110,7 +110,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
                       ),
                 )),
                  Container(
-                   height: 90.sp,
+                   height: 110.sp,
                   width: 300.w,
                    child: Text(
                       '24/7 support, please have your Webjet Booking Reference ready.If you are overseas, please call us on +61 3 7043 9058. If you are based in Australia, please call us on the toll free number below',
@@ -211,6 +211,7 @@ class _DescriptionPageState extends State<ViewDescriptionPage> {
             ),
           ],
         ),
+       
       ],
     );
   }

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fly_jet/common/colors.dart';
 import 'package:fly_jet/view2imgs.dart';
+import 'package:fly_jet/widgets/backtotop.dart';
+import 'package:fly_jet/widgets/footer.dart';
 import 'package:fly_jet/widgets/header.dart';
 import 'package:fly_jet/widgets/list.dart';
 import 'package:fly_jet/widgets/listview.dart';
@@ -32,16 +34,18 @@ class _ViewScreenState extends State<ViewScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
             
-           SizedBox(height: 25,),
+           SizedBox(height: 25.sp,),
            
             ViewPage(),
-           SizedBox(height: 25,),
+           SizedBox(height: 25.sp,),
           Listview(),
-            SizedBox(height: 65,),
+            SizedBox(height: 65.sp,),
             ViewDescriptionPage(),
-             SizedBox(height: 65,),
+             SizedBox(height: 65.sp,),
           View2Img(),
-            SizedBox(height: 65,),            
+            SizedBox(height: 65.sp,), 
+            BackToTop(),
+            Footer(),           
             ],
           ),
         ),

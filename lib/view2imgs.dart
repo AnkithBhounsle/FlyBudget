@@ -14,14 +14,14 @@ class _View2ImgState extends State<View2Img> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 150.w),
+      padding: EdgeInsets.only(left: 120.w),
       child: Row(
         children: [
           Container(
             decoration: BoxDecoration(
               border: Border.all(color: FBColors.darkgrey),
             ),
-            width: 550.w,
+            width: 540.w,
             height: 200.sp,
             child: Padding(
               padding: EdgeInsets.only(left: 20.w, top: 25.sp),
@@ -111,7 +111,7 @@ class _View2ImgState extends State<View2Img> {
             decoration: BoxDecoration(
               border: Border.all(color: FBColors.darkgrey,),
             ),
-            width: 550.w,
+            width: 540.w,
             height: 200.sp,
             child: Row(
               children: [
@@ -170,5 +170,6 @@ class _View2ImgState extends State<View2Img> {
         ],
       ),
     );
+    
   }
 }
